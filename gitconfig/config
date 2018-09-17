@@ -1,0 +1,29 @@
+git config --global user.email "blazejok1@wp.pl"
+git config --global user.name "Blazej Sewera"
+
+# Go to the project folder
+cd <project folder>
+
+# Initialize git repo in the directory
+# It initializes in the .git subdir, parent folder is working folder
+git init
+
+# Add files to track
+git add <files>
+
+# Commit first changes
+git commit -m 'comment'
+
+# Go to remote (sync) folder or create one (should end with .git)
+cd <remote folder> / mkdir <remote>.git
+
+# Initialize bare folder (without working directory)
+git init --bare
+
+# Go to the working directory (project folder)
+cd <project folder>
+
+# Push the changes to the remote, setting default upstream (for branch master)
+git push --set-upstream <remote-folder.git> master
+
+# Next time use only git push
