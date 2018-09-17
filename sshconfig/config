@@ -1,0 +1,17 @@
+# On server you should allow only required users
+AllowUsers jazz
+
+# To prevent constant password inputs, set it up this way:
+# A is client, B is ssh server
+a@A$ ssh-keygen -t rsa
+# Save rsa file under /home/a/.ssh/ dir
+Passphrase: <null>
+
+# Make directory .ssh on server if not already existing:
+a@A$ ssh b@B 'mkdir -p .ssh'
+b@B pass:
+
+# Append a's new public key to b@B: .ssh/authorized_keys
+a@A$ cat .ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
+
+# You should be able to log into B without password.
