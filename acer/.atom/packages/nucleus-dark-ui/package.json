@@ -1,0 +1,57 @@
+{
+  "_from": "file:/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+  "_id": "nucleus-dark-ui@0.12.3",
+  "_inBundle": false,
+  "_integrity": "sha512-y7iT/18L0jV9lY81Zm62JEk4I6aG1SsIJ5EA6mMbZiVuQQjNrjkRZrgjcTMJ0xmA5PdaEiqWhRHY26dyTTglVg==",
+  "_location": "/nucleus-dark-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/tmp/apm-install-dir-118729-6783-1m5bkqz.983",
+    "raw": "/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+    "rawSpec": "/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+    "saveSpec": "file:/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+    "fetchSpec": "/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+  "_shasum": "41f14844c2ae582bab548ae95ea7d2a275ac1ddd",
+  "_spec": "/tmp/d-118729-6783-1f1j3x4.znv5h/package.tgz",
+  "_where": "/tmp/apm-install-dir-118729-6783-1m5bkqz.983",
+  "bugs": {
+    "url": "https://github.com/ignism/nucleus-dark-ui/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "An adaptable UI with your favorite syntax theme at its core!",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ignism/nucleus-dark-ui#readme",
+  "keywords": [
+    "dark",
+    "adaptive",
+    "ui"
+  ],
+  "license": "MIT",
+  "name": "nucleus-dark-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignism/nucleus-dark-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.12.3",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

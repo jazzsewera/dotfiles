@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+  "_id": "in-rainbows-syntax@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-4x0gM51eCgzZhw4d2+RsooYioWIBVYHKOZMRyMl9If1lm13fUxz2m88PY1p6D7Mtui2UsRVBpovjQHuS9Pl0CA==",
+  "_location": "/in-rainbows-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+  "_shasum": "851a34fe75568d04ab9b87b1bee511524b378201",
+  "_spec": "https://www.atom.io/api/packages/in-rainbows-syntax/versions/0.3.0/tarball",
+  "_where": "/tmp/apm-install-dir-11886-19438-1gyz4sh.wi46",
+  "bugs": {
+    "url": "https://github.com/testacode/in-rainbows-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A rainbowed string syntax.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/testacode/in-rainbows-syntax#readme",
+  "keywords": [
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "in-rainbows-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testacode/in-rainbows-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.3.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

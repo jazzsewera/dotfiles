@@ -1,0 +1,60 @@
+{
+  "_from": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+  "_id": "pure-syntax@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-QAHgM51NkVBdBADj8zd28LbiJm+QohUw3/7Ljh1U7RIyTisE+2dF2iTIrjhds6TKCYaZX0f7g0QcA3QIQX73uQ==",
+  "_location": "/pure-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+  "_shasum": "920b3d113a099dcf9f6de979ad2802c1ed84955f",
+  "_spec": "https://www.atom.io/api/packages/pure-syntax/versions/1.0.1/tarball",
+  "_where": "/tmp/apm-install-dir-118818-4040-1bb6zos.thcx",
+  "bugs": {
+    "url": "https://github.com/polymoon/pure-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A vibrant syntax theme for Atom.",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/polymoon/pure-dark-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "pure",
+    "colorful",
+    "dark",
+    "vivid",
+    "vibrant"
+  ],
+  "license": "MIT",
+  "name": "pure-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polymoon/pure-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

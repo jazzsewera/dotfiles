@@ -1,0 +1,1 @@
+{"source":"atom-text-editor.editor {\n  background-color: black;\n}\natom-text-editor.editor.is-focused .selection .region {\n  background-color: #400;\n}\natom-text-editor.editor:not(.is-focused) .selection .region {\n  background-color: #311;\n}\natom-text-editor.editor .wrap-guide {\n  background: none;\n}\n"}

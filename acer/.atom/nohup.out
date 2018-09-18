@@ -1,0 +1,5 @@
+Gtk-Message: 01:55:01.355: GtkDialog mapped without a transient parent. This is discouraged.
+Gtk-Message: 01:55:21.195: GtkDialog mapped without a transient parent. This is discouraged.
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:61:22
+Remote event names: destroyed, crashed

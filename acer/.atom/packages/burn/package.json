@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+  "_id": "burn@0.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jOxBsijwvry1/UjKL5SMN7P7iAt2AvmnuMcJ6Hi8uyud8BFwxatAZH4WmpFLwe/iALd9t5r/GC/jiPsdH6frng==",
+  "_location": "/burn",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+  "_shasum": "d7806863d4071651b1fd26e792c497149b34bd8f",
+  "_spec": "https://www.atom.io/api/packages/burn/versions/0.2.1/tarball",
+  "_where": "/tmp/apm-install-dir-11886-20055-1h69yed.jd7tk",
+  "bugs": {
+    "url": "https://github.com/rowanmanning/atom-burn/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Like Zenburn, but with less Zen",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/rowanmanning/atom-burn#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "burn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rowanmanning/atom-burn.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

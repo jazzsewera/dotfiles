@@ -1,0 +1,105 @@
+atom-notifications {
+  atom-notification {
+    font-size: @font-size;
+    &.has-close.message {
+      padding-right: 24px;
+    }
+    .item {
+      border-top: 0;
+      padding: 0;
+      margin: 12px;
+    }
+
+    .content {
+      overflow: hidden;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .close {
+      .transition();
+      opacity: 1;
+      width: @component-icon-size;
+      height: @component-icon-size;
+      line-height: @component-icon-size;
+      top: 12px;
+      right: 8px;
+      position: absolute;
+      border-radius: 2px;
+
+      &:before {
+        font-size: 12px;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:hover {
+        background-color: @dark;
+      }
+    }
+    @color-info-level-1: @ui-blue;
+    @color-success-level-1: @ui-green;
+    @color-warning-level-1: @ui-orange;
+    @color-error-level-1: @ui-red;
+    @color-fatal-level-1: @ui-red;
+    .generate-notification-type(info);
+    .generate-notification-type(success);
+    .generate-notification-type(warning);
+    .generate-notification-type(error);
+    .generate-notification-type(fatal);
+  }
+}
+
+.generate-notification-type(@class) {
+  @color: "color-@{class}-level-1";
+  @bright: @@color;
+  @dark: mix(@ui-background-level-2, @@color, 88%);
+
+  &.@{class} {
+    .close-all.btn {
+      font-size: 0.8rem;
+      top: 3px;
+      right: 24px;
+      border: 0;
+    }
+
+    .close,
+    .close-all.btn,
+    a {
+      color: @bright;
+
+      &:hover {
+        color: @text-color-highlight;
+      }
+    }
+
+    .close:hover {
+      background-color: @bright;
+    }
+
+    &.icon:before {
+      color: @dark;
+      background-color: @bright;
+    }
+
+    .detail {
+      color: @bright;
+      background: @dark;
+    }
+
+    .content {
+      color: @bright;
+      background-color: @dark;
+    }
+
+    code {
+      color: @dark;
+      background-color: @bright;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+    <title>Aspartus skaner</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      function readURL(input) {
+
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            $('#imagePreview').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" style="margin: 0;">
+          <img src="./img/aspartus_logo_outlines.svg" style="height: 50px;" alt="" />
+        </a>
+        <span class="divider-vertical"></span>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="float: left;">
+              <img src="./img/skaner_aztec_logo.png" style="height: 50px;" alt="" />
+            </a>
+          </li>
+        </ul>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="heading">Dodawanie zdjęcia</h1>
+      <hr />
+      <div id="addPicture">
+        <form id="imageForm" runat="server">
+          <label for="image">Dodaj zdjęcie z dysku:</label>
+          <input type="file" name="image" id="image" class="form-control-file form-control-lg border" accept="image/*" onchange="readURL(this);" />
+          <div class="border jumbotron" style="padding: 1em;">
+            <img src="#" id="imagePreview" alt="Nie załadowano zdjęcia" class="rounded mx-auto d-block"  style="width: 100%; color: #777;" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

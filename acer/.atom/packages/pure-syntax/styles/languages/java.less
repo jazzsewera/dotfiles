@@ -1,0 +1,39 @@
+/* SYNTAX: JAVA */
+
+.syntax--source.syntax--java {
+  .syntax--storage {
+    &.syntax--modifier.syntax--import {
+      color: @hue-8;
+    }
+
+    &.syntax--type {
+      color: @hue-8;
+    }
+  }
+  .syntax--keyword.syntax--operator.syntax--instanceof {
+    color: @hue-3;
+  }
+
+  .syntax--punctuation {
+    &.syntax--bracket,
+    &.syntax--terminator {
+      color: @mono-3;
+    }
+  }
+
+  .syntax--operator,
+  .syntax--comparison,
+  .syntax--logical {
+    color: @hue-8;
+  }
+}
+
+.syntax--source.syntax--java-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @hue-5;
+
+    & > .syntax--punctuation {
+      color: @mono-1;
+    }
+  }
+}

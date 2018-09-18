@@ -1,0 +1,59 @@
+{
+  "_from": "file:/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+  "_id": "now-syntax@0.2.4",
+  "_inBundle": false,
+  "_integrity": "sha512-mQbOmfKjowB/1e54F/UuXe8VyAwkh1fMpRrt1ACgCDU/mubUroFaRi2LeWsEo5e6KUqjfk5WwhtNwgyH3msJjw==",
+  "_location": "/now-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/tmp/apm-install-dir-118729-4721-18y2mgg.qwb3f",
+    "raw": "/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+    "rawSpec": "/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+    "saveSpec": "file:/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+    "fetchSpec": "/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+  "_shasum": "8f9e0c9c1da428b09d897917086f194fd7e6ef58",
+  "_spec": "/tmp/d-118729-4721-1nkuh01.yv9gg/package.tgz",
+  "_where": "/tmp/apm-install-dir-118729-4721-18y2mgg.qwb3f",
+  "author": {
+    "name": "Daniel Illouz"
+  },
+  "bugs": {
+    "url": "https://github.com/danillouz/now-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Minimalistic dark syntax theme inspired by the zeit now website.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/danillouz/now-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark"
+  ],
+  "license": "MIT",
+  "name": "now-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danillouz/now-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.4",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

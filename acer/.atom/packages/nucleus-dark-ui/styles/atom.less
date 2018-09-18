@@ -1,0 +1,125 @@
+:root {
+  font-size: @font-size;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; // EDIT
+}
+
+atom-workspace {
+  background-color: @app-background-color;
+}
+
+status-bar {
+  .text(highlight);
+  background: @base-border-color;
+  height: 2.25rem;
+  line-height: @component-line-height;
+  font-size: 0.8rem;
+  z-index: +1000;
+
+  span {
+    font-size: 0.8rem;
+  }
+}
+
+.title-bar {
+  background: @app-background-color;
+  border-color: transparent;
+}
+// Keyboard Shortcuts ----------------------------------------------------------
+
+.keystroke,
+kbd {
+  .text(invert);
+  font-size: @font-size;
+  font-family: @font-family;
+  line-height: @component-line-height;
+  background: @background-color-info;
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 2px;
+}
+// Close icons -----------------------------------------------------------------
+
+.close-icon::before,
+.icon-x::before,
+.icon.x::before {
+  content: '✕' !important;
+}
+// Scrollbars ------------------------------------------------------------------
+
+.scrollbars-visible-always {
+  /deep/::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /deep/::-webkit-scrollbar-track {
+    background: @scrollbar-background-color;
+  }
+
+  /deep/::-webkit-scrollbar-corner {
+    background: @scrollbar-background-color;
+  }
+
+  /deep/::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 3px solid @scrollbar-background-color;
+    background: @scrollbar-color;
+    background-clip: content-box;
+
+    &:active,
+    &:hover {
+      border-width: 1px;
+    }
+  }
+
+
+  atom-panel-container.bottom,
+  atom-text-editor {
+    /deep/::-webkit-scrollbar-track {
+      background: @base-background-color;
+    }
+
+    /deep/::-webkit-scrollbar-corner {
+      background: @base-background-color;
+    }
+
+    /deep/::-webkit-scrollbar-thumb {
+      border-color: @base-background-color;
+      background: @scrollbar-color;
+    }
+  }
+}
+
+// docks
+atom-dock {
+  .atom-dock-toggle-button {
+    .atom-dock-toggle-button-inner {
+      border: 0;
+
+      &.left,
+      &.right {
+        .icon {
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+}
+
+// github
+.github {
+  &-DialogInputs,
+  &-DialogButtons,
+  &-DialogLabel {
+    padding: 0;
+    margin: 0;
+  }
+
+  &-Panel:not(.is-empty):not(.no-repository) {
+    background: @tool-panel-background-color;
+  }
+}

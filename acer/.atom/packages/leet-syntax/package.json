@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+  "_id": "leet-syntax@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-QW+1DhH/XpA/5UKEbC4iOn2dhuGHkTjGhGIFsebc6jnuHp+/munqjTDy+C/gxDkrCRkHhLFUFBc9zH/RwCZsvA==",
+  "_location": "/leet-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+  "_shasum": "f13ae5de1dabb2854e66ec73459a6742c54bb22b",
+  "_spec": "https://www.atom.io/api/packages/leet-syntax/versions/1.0.0/tarball",
+  "_where": "/tmp/apm-install-dir-11886-19159-1q7zd24.mha5",
+  "bugs": {
+    "url": "https://github.com/benogle/leet-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A syntax theme that brings you back to the good ol' days",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/benogle/leet-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "leet-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benogle/leet-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -1,0 +1,156 @@
+.tab-bar {
+   background: @tab-bar-background-color;
+   width: 100%;
+   height: @tab-height;
+  // -webkit-transform:scale(1);
+
+  .tab {
+    .transition();
+    .text(normal);
+    .text(subtle);
+    text-align: center;
+    color: @text-color-subtle;
+    background: @tab-background-color;
+    width: 100%;
+    max-width: 100%;
+    height: @tab-height;
+    line-height: @tab-height;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1;
+
+    // .title { TODO: Make a settings screen for this
+    //   .text(uppercase);
+    //   font-size: 0.85rem;
+    // }
+
+    &:hover {
+      .text(highlight);
+      background: @background-color-highlight;
+
+      .close-icon {
+        opacity: 1;
+        &:before {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &.active,
+    &:hover.active {
+      color: @text-color-selected;
+      background: @tab-background-color-active;
+      width: 100%;
+      max-width: 100%;
+      flex: 1;
+
+      .title {
+        .text(selected);
+        padding: 0;
+      }
+
+      .status-modified {
+        color: @text-color-modified;
+      }
+
+      .status-added {
+        color: @text-color-added;
+      }
+
+      .status-ignored {
+        color: @text-color-ignored;
+      }
+    }
+
+    // Close Icon --------------------------------------------------------------
+    .close-icon {
+      .transition(background);
+      top: (@tab-height - @component-icon-size) / 2;
+      width: @component-icon-size;
+      height: @component-icon-size;
+      line-height: @component-icon-size;
+      left: auto;
+      right: 4px;
+      position: absolute;
+      opacity: 0;
+      border-radius: 2px;
+
+      &::before {
+        .transition();
+        transform: scale(0);
+        color: @text-color-highlight;
+        font-size: 12px;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 12px;
+        height: 12px;
+      }
+
+      &:hover {
+        background: @tab-background-color;
+      }
+    }
+    // Modified ----------------------------------------------------------------
+    &.modified:not(:hover) .close-icon {
+      opacity: 1;
+      top: (@tab-height - 6) / 2;
+      right: 8px;
+      display: inline-block;
+      border-width: 1px;
+      border-color: @text-color-modified;
+    }
+
+    &.modified {
+      &:hover .close-icon::before {
+          color: @text-color-modified;
+      }
+    }
+
+    &.modified .close-icon:hover {
+      background: @text-color-modified;
+
+      &::before {
+        .text(invert);
+      }
+    }
+  }
+}
+
+atom-dock {
+  .tab-bar {
+    .tab {
+      &.active,
+      &:hover.active {
+        color: @text-color-selected;
+        background: @tab-background-color;
+
+        &[data-type="TextEditor"],
+        &[data-type="SettingsView"],
+        &[data-type="AboutView"],
+        &[data-type="StyleguideView"],
+        &[data-type="TimecopView"],
+        &[data-type="MarkdownPreviewView"]{
+          background: @tab-background-color-active;
+        }
+      }
+    }
+  }
+}
+
+// MacOS -----------------------------------------------------------------------
+.platform-darwin {
+  .tab-bar .tab {
+    .close-icon {
+      left: 4px;
+      right: auto;
+    }
+
+    &.modified:not(:hover) .close-icon {
+      left: 8px;
+      right: auto;
+    }
+  }
+}

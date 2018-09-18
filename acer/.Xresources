@@ -1,0 +1,8 @@
+#include "/home/jazz/RiceDotFiles/Xthemes/atelierforest.dark.Xresources"
+
+URxvt.font: xft:SauceCodePro Nerd Font:style=Regular:size=13
+URxvt.scrollBar: false
+URxvt.borderless: true
+URxvt.internalBorder: 5
+
+rofi.font: xft: SauceCodePro Nerd Font:style=Regular:size=14

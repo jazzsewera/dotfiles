@@ -1,0 +1,489 @@
+[   104.481] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[   104.482] 
+X.Org X Server 1.20.0
+X Protocol Version 11, Revision 0
+[   104.483] Build Operating System: Linux Arch Linux
+[   104.483] Current Operating System: Linux jazz-arch 4.17.14-arch1-1-ARCH #1 SMP PREEMPT Thu Aug 9 11:56:50 UTC 2018 x86_64
+[   104.483] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=1f68b2a4-24c3-4e30-a5de-099d42e23366 rw quiet
+[   104.484] Build Date: 18 June 2018  03:12:37PM
+[   104.484]  
+[   104.484] Current version of pixman: 0.34.0
+[   104.485] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   104.485] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   104.487] (==) Log file: "/home/jazz/.local/share/xorg/Xorg.0.log", Time: Tue Aug 21 21:16:10 2018
+[   104.488] (==) Using config file: "/etc/X11/xorg.conf"
+[   104.489] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   104.489] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   104.492] (==) No Layout section.  Using the first Screen section.
+[   104.492] (==) No screen section available. Using defaults.
+[   104.492] (**) |-->Screen "Default Screen Section" (0)
+[   104.492] (**) |   |-->Monitor "<default monitor>"
+[   104.492] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[   104.492] (**) |   |-->Device "0x42"
+[   104.492] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   104.492] (==) Automatically adding devices
+[   104.492] (==) Automatically enabling devices
+[   104.492] (==) Automatically adding GPU devices
+[   104.492] (==) Automatically binding GPU devices
+[   104.492] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   104.495] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/misc".
+[   104.495] 	Entry deleted from font path.
+[   104.495] 	(Run 'mkfontdir' on "/usr/share/fonts/misc").
+[   104.495] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[   104.495] 	Entry deleted from font path.
+[   104.495] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[   104.495] 	Entry deleted from font path.
+[   104.495] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   104.495] 	Entry deleted from font path.
+[   104.497] (==) FontPath set to:
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[   104.497] (==) ModulePath set to "/usr/lib/xorg/modules"
+[   104.497] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   104.497] (II) Module ABI versions:
+[   104.497] 	X.Org ANSI C Emulation: 0.4
+[   104.497] 	X.Org Video Driver: 24.0
+[   104.497] 	X.Org XInput driver : 24.1
+[   104.497] 	X.Org Server Extension : 10.0
+[   104.498] (++) using VT number 2
+
+[   104.500] (II) systemd-logind: took control of session /org/freedesktop/login1/session/c1
+[   104.500] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   104.501] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[   104.502] (--) PCI:*(0@0:2:0) 8086:191b:1025:1039 rev 6, Mem @ 0x92000000/16777216, 0xa0000000/268435456, I/O @ 0x00005000/64, BIOS @ 0x????????/131072
+[   104.502] (--) PCI: (1@0:0:0) 10de:139b:1025:1039 rev 162, Mem @ 0x93000000/16777216, 0x50000000/268435456, 0x60000000/33554432, I/O @ 0x00004000/128
+[   104.502] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   104.503] (II) LoadModule: "glx"
+[   104.503] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   104.512] (II) Module glx: vendor="X.Org Foundation"
+[   104.512] 	compiled for 1.20.0, module version = 1.0.0
+[   104.513] 	ABI class: X.Org Server Extension, version 10.0
+[   104.513] (II) LoadModule: "intel"
+[   104.514] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[   104.517] (II) Module intel: vendor="X.Org Foundation"
+[   104.517] 	compiled for 1.20.0, module version = 2.99.917
+[   104.517] 	Module class: X.Org Video Driver
+[   104.517] 	ABI class: X.Org Video Driver, version 24.0
+[   104.517] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[   104.517] (II) intel: Driver for Intel(R) HD Graphics
+[   104.517] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[   104.517] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[   104.518] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[   104.519] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20180308
+[   104.519] (II) intel(0): SNA compiled from 2.99.917-831-ge7bfc906
+[   104.534] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[   104.535] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 530
+[   104.535] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 4 threads
+[   104.535] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   104.535] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[   104.535] (==) intel(0): RGB weight 888
+[   104.535] (==) intel(0): Default visual is TrueColor
+[   104.535] (**) intel(0): Option "Backlight" "intel_backlight"
+[   104.536] (II) intel(0): Output eDP1 has no monitor section
+[   104.537] (**) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[   104.537] (II) intel(0): Enabled output eDP1
+[   104.537] (II) intel(0): Output DP1 has no monitor section
+[   104.537] (II) intel(0): Enabled output DP1
+[   104.537] (II) intel(0): Output HDMI1 has no monitor section
+[   104.538] (II) intel(0): Enabled output HDMI1
+[   104.538] (II) intel(0): Output DP2 has no monitor section
+[   104.538] (II) intel(0): Enabled output DP2
+[   104.538] (II) intel(0): Output HDMI2 has no monitor section
+[   104.538] (II) intel(0): Enabled output HDMI2
+[   104.538] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[   104.539] (II) intel(0): Output VIRTUAL1 has no monitor section
+[   104.539] (II) intel(0): Enabled output VIRTUAL1
+[   104.539] (--) intel(0): Output eDP1 using initial mode 1920x1080 on pipe 0
+[   104.539] (==) intel(0): TearFree disabled
+[   104.539] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[   104.539] (==) intel(0): DPI set to (96, 96)
+[   104.539] (II) Loading sub module "dri3"
+[   104.539] (II) LoadModule: "dri3"
+[   104.539] (II) Module "dri3" already built-in
+[   104.539] (II) Loading sub module "dri2"
+[   104.539] (II) LoadModule: "dri2"
+[   104.539] (II) Module "dri2" already built-in
+[   104.539] (II) Loading sub module "present"
+[   104.539] (II) LoadModule: "present"
+[   104.539] (II) Module "present" already built-in
+[   104.542] (II) intel(0): SNA initialized with Skylake (gen9) backend
+[   104.542] (==) intel(0): Backing store enabled
+[   104.542] (==) intel(0): Silken mouse disabled
+[   104.542] (II) intel(0): HW Cursor enabled
+[   104.543] (==) intel(0): DPMS enabled
+[   104.543] (==) intel(0): Display hotplug detection enabled
+[   104.543] (II) intel(0): [DRI2] Setup complete
+[   104.543] (II) intel(0): [DRI2]   DRI driver: i965
+[   104.543] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[   104.543] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[   104.543] (II) intel(0): hardware support for Present enabled
+[   104.543] (II) Initializing extension Generic Event Extension
+[   104.543] (II) Initializing extension SHAPE
+[   104.543] (II) Initializing extension MIT-SHM
+[   104.543] (II) Initializing extension XInputExtension
+[   104.543] (II) Initializing extension XTEST
+[   104.543] (II) Initializing extension BIG-REQUESTS
+[   104.543] (II) Initializing extension SYNC
+[   104.543] (II) Initializing extension XKEYBOARD
+[   104.543] (II) Initializing extension XC-MISC
+[   104.544] (II) Initializing extension SECURITY
+[   104.544] (II) Initializing extension XFIXES
+[   104.544] (II) Initializing extension RENDER
+[   104.544] (II) Initializing extension RANDR
+[   104.544] (II) Initializing extension COMPOSITE
+[   104.544] (II) Initializing extension DAMAGE
+[   104.544] (II) Initializing extension MIT-SCREEN-SAVER
+[   104.544] (II) Initializing extension DOUBLE-BUFFER
+[   104.544] (II) Initializing extension RECORD
+[   104.544] (II) Initializing extension DPMS
+[   104.544] (II) Initializing extension Present
+[   104.544] (II) Initializing extension DRI3
+[   104.544] (II) Initializing extension X-Resource
+[   104.544] (II) Initializing extension XVideo
+[   104.544] (II) Initializing extension XVideo-MotionCompensation
+[   104.544] (II) Initializing extension GLX
+[   104.592] (II) AIGLX: Loaded and initialized i965
+[   104.592] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   104.592] (II) Initializing extension XFree86-VidModeExtension
+[   104.592] (II) Initializing extension XFree86-DGA
+[   104.592] (II) Initializing extension XFree86-DRI
+[   104.592] (II) Initializing extension DRI2
+[   104.599] (II) intel(0): switch to mode 1920x1080@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[   104.609] (II) intel(0): Setting screen physical size to 508 x 285
+[   104.700] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[   104.700] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   104.700] (II) LoadModule: "libinput"
+[   104.700] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[   104.704] (II) Module libinput: vendor="X.Org Foundation"
+[   104.704] 	compiled for 1.20.0, module version = 0.28.0
+[   104.704] 	Module class: X.Org XInput Driver
+[   104.704] 	ABI class: X.Org XInput driver, version 24.1
+[   104.704] (II) Using input driver 'libinput' for 'Power Button'
+[   104.705] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 15 paused 0
+[   104.705] (**) Power Button: always reports core events
+[   104.705] (**) Option "Device" "/dev/input/event2"
+[   104.705] (**) Option "_source" "server/udev"
+[   104.705] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   104.705] (II) event2  - Power Button: device is a keyboard
+[   104.705] (II) event2  - Power Button: device removed
+[   104.705] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[   104.705] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   104.706] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   104.706] (II) event2  - Power Button: device is a keyboard
+[   104.706] (II) config/udev: Adding input device Video Bus (/dev/input/event13)
+[   104.706] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   104.706] (II) Using input driver 'libinput' for 'Video Bus'
+[   104.707] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 18 paused 0
+[   104.707] (**) Video Bus: always reports core events
+[   104.707] (**) Option "Device" "/dev/input/event13"
+[   104.707] (**) Option "_source" "server/udev"
+[   104.707] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[   104.707] (II) event13 - Video Bus: device is a keyboard
+[   104.707] (II) event13 - Video Bus: device removed
+[   104.707] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input19/event13"
+[   104.707] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   104.707] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[   104.707] (II) event13 - Video Bus: device is a keyboard
+[   104.708] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[   104.708] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   104.708] (II) Using input driver 'libinput' for 'Video Bus'
+[   104.708] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 19 paused 0
+[   104.708] (**) Video Bus: always reports core events
+[   104.708] (**) Option "Device" "/dev/input/event12"
+[   104.708] (**) Option "_source" "server/udev"
+[   104.709] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   104.709] (II) event12 - Video Bus: device is a keyboard
+[   104.709] (II) event12 - Video Bus: device removed
+[   104.709] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:00/LNXVIDEO:00/input/input18/event12"
+[   104.709] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   104.709] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   104.709] (II) event12 - Video Bus: device is a keyboard
+[   104.709] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   104.709] (II) No input driver specified, ignoring this device.
+[   104.709] (II) This device may have been added with another device file.
+[   104.710] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[   104.710] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[   104.710] (II) Using input driver 'libinput' for 'Sleep Button'
+[   104.710] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 20 paused 0
+[   104.710] (**) Sleep Button: always reports core events
+[   104.710] (**) Option "Device" "/dev/input/event1"
+[   104.710] (**) Option "_source" "server/udev"
+[   104.711] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[   104.711] (II) event1  - Sleep Button: device is a keyboard
+[   104.711] (II) event1  - Sleep Button: device removed
+[   104.711] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1/event1"
+[   104.711] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[   104.711] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[   104.711] (II) event1  - Sleep Button: device is a keyboard
+[   104.712] (II) config/udev: Adding input device Razer Razer Basilisk (/dev/input/event4)
+[   104.712] (**) Razer Razer Basilisk: Applying InputClass "libinput pointer catchall"
+[   104.712] (II) Using input driver 'libinput' for 'Razer Razer Basilisk'
+[   104.767] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 21 paused 0
+[   104.767] (**) Razer Razer Basilisk: always reports core events
+[   104.767] (**) Option "Device" "/dev/input/event4"
+[   104.767] (**) Option "_source" "server/udev"
+[   104.768] (II) event4  - Razer Razer Basilisk: is tagged by udev as: Mouse
+[   104.768] (II) event4  - Razer Razer Basilisk: device is a pointer
+[   104.768] (II) event4  - Razer Razer Basilisk: device removed
+[   104.768] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:1532:0064.0001/input/input4/event4"
+[   104.768] (II) XINPUT: Adding extended input device "Razer Razer Basilisk" (type: MOUSE, id 10)
+[   104.769] (**) Option "AccelerationScheme" "none"
+[   104.769] (**) Razer Razer Basilisk: (accel) selected scheme none/0
+[   104.769] (**) Razer Razer Basilisk: (accel) acceleration factor: 2.000
+[   104.769] (**) Razer Razer Basilisk: (accel) acceleration threshold: 4
+[   104.770] (II) event4  - Razer Razer Basilisk: is tagged by udev as: Mouse
+[   104.770] (II) event4  - Razer Razer Basilisk: device is a pointer
+[   104.771] (II) config/udev: Adding input device Razer Razer Basilisk (/dev/input/mouse0)
+[   104.771] (II) No input driver specified, ignoring this device.
+[   104.771] (II) This device may have been added with another device file.
+[   104.772] (II) config/udev: Adding input device Razer Razer Basilisk (/dev/input/event5)
+[   104.772] (**) Razer Razer Basilisk: Applying InputClass "libinput keyboard catchall"
+[   104.772] (II) Using input driver 'libinput' for 'Razer Razer Basilisk'
+[   104.773] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 22 paused 0
+[   104.773] (**) Razer Razer Basilisk: always reports core events
+[   104.773] (**) Option "Device" "/dev/input/event5"
+[   104.773] (**) Option "_source" "server/udev"
+[   104.773] (II) event5  - Razer Razer Basilisk: is tagged by udev as: Keyboard
+[   104.773] (II) event5  - Razer Razer Basilisk: device is a keyboard
+[   104.773] (II) event5  - Razer Razer Basilisk: device removed
+[   104.773] (II) libinput: Razer Razer Basilisk: needs a virtual subdevice
+[   104.773] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1532:0064.0002/input/input5/event5"
+[   104.773] (II) XINPUT: Adding extended input device "Razer Razer Basilisk" (type: MOUSE, id 11)
+[   104.774] (**) Option "AccelerationScheme" "none"
+[   104.774] (**) Razer Razer Basilisk: (accel) selected scheme none/0
+[   104.774] (**) Razer Razer Basilisk: (accel) acceleration factor: 2.000
+[   104.774] (**) Razer Razer Basilisk: (accel) acceleration threshold: 4
+[   104.774] (II) event5  - Razer Razer Basilisk: is tagged by udev as: Keyboard
+[   104.774] (II) event5  - Razer Razer Basilisk: device is a keyboard
+[   104.774] (II) config/udev: Adding input device Razer Razer Basilisk (/dev/input/event6)
+[   104.774] (**) Razer Razer Basilisk: Applying InputClass "libinput keyboard catchall"
+[   104.774] (II) Using input driver 'libinput' for 'Razer Razer Basilisk'
+[   104.775] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 23 paused 0
+[   104.775] (**) Razer Razer Basilisk: always reports core events
+[   104.775] (**) Option "Device" "/dev/input/event6"
+[   104.775] (**) Option "_source" "server/udev"
+[   104.775] (II) event6  - Razer Razer Basilisk: is tagged by udev as: Keyboard
+[   104.775] (II) event6  - Razer Razer Basilisk: device is a keyboard
+[   104.775] (II) event6  - Razer Razer Basilisk: device removed
+[   104.776] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:1532:0064.0003/input/input6/event6"
+[   104.776] (II) XINPUT: Adding extended input device "Razer Razer Basilisk" (type: KEYBOARD, id 12)
+[   104.776] (II) event6  - Razer Razer Basilisk: is tagged by udev as: Keyboard
+[   104.776] (II) event6  - Razer Razer Basilisk: device is a keyboard
+[   104.777] (II) config/udev: Adding input device HOLTEK USB-HID Keyboard (/dev/input/event7)
+[   104.777] (**) HOLTEK USB-HID Keyboard: Applying InputClass "libinput keyboard catchall"
+[   104.777] (II) Using input driver 'libinput' for 'HOLTEK USB-HID Keyboard'
+[   104.777] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 24 paused 0
+[   104.777] (**) HOLTEK USB-HID Keyboard: always reports core events
+[   104.777] (**) Option "Device" "/dev/input/event7"
+[   104.777] (**) Option "_source" "server/udev"
+[   104.778] (II) event7  - HOLTEK USB-HID Keyboard: is tagged by udev as: Keyboard
+[   104.778] (II) event7  - HOLTEK USB-HID Keyboard: device is a keyboard
+[   104.778] (II) event7  - HOLTEK USB-HID Keyboard: device removed
+[   104.778] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/0003:04D9:A131.0004/input/input7/event7"
+[   104.778] (II) XINPUT: Adding extended input device "HOLTEK USB-HID Keyboard" (type: KEYBOARD, id 13)
+[   104.778] (II) event7  - HOLTEK USB-HID Keyboard: is tagged by udev as: Keyboard
+[   104.778] (II) event7  - HOLTEK USB-HID Keyboard: device is a keyboard
+[   104.779] (II) config/udev: Adding input device HOLTEK USB-HID Keyboard (/dev/input/event8)
+[   104.779] (**) HOLTEK USB-HID Keyboard: Applying InputClass "libinput pointer catchall"
+[   104.779] (**) HOLTEK USB-HID Keyboard: Applying InputClass "libinput keyboard catchall"
+[   104.779] (II) Using input driver 'libinput' for 'HOLTEK USB-HID Keyboard'
+[   104.780] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 25 paused 0
+[   104.780] (**) HOLTEK USB-HID Keyboard: always reports core events
+[   104.780] (**) Option "Device" "/dev/input/event8"
+[   104.780] (**) Option "_source" "server/udev"
+[   104.780] (II) event8  - HOLTEK USB-HID Keyboard: is tagged by udev as: Keyboard Mouse
+[   104.780] (II) event8  - HOLTEK USB-HID Keyboard: device is a pointer
+[   104.780] (II) event8  - HOLTEK USB-HID Keyboard: device is a keyboard
+[   104.780] (II) event8  - HOLTEK USB-HID Keyboard: device removed
+[   104.780] (II) libinput: HOLTEK USB-HID Keyboard: needs a virtual subdevice
+[   104.780] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.2/0003:04D9:A131.0006/input/input8/event8"
+[   104.780] (II) XINPUT: Adding extended input device "HOLTEK USB-HID Keyboard" (type: MOUSE, id 14)
+[   104.780] (**) Option "AccelerationScheme" "none"
+[   104.780] (**) HOLTEK USB-HID Keyboard: (accel) selected scheme none/0
+[   104.780] (**) HOLTEK USB-HID Keyboard: (accel) acceleration factor: 2.000
+[   104.780] (**) HOLTEK USB-HID Keyboard: (accel) acceleration threshold: 4
+[   104.781] (II) event8  - HOLTEK USB-HID Keyboard: is tagged by udev as: Keyboard Mouse
+[   104.781] (II) event8  - HOLTEK USB-HID Keyboard: device is a pointer
+[   104.781] (II) event8  - HOLTEK USB-HID Keyboard: device is a keyboard
+[   104.781] (II) config/udev: Adding input device HOLTEK USB-HID Keyboard (/dev/input/mouse1)
+[   104.781] (II) No input driver specified, ignoring this device.
+[   104.781] (II) This device may have been added with another device file.
+[   104.782] (II) config/udev: Adding input device HD WebCam: HD WebCam (/dev/input/event21)
+[   104.782] (**) HD WebCam: HD WebCam: Applying InputClass "libinput keyboard catchall"
+[   104.782] (II) Using input driver 'libinput' for 'HD WebCam: HD WebCam'
+[   104.782] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 26 paused 0
+[   104.782] (**) HD WebCam: HD WebCam: always reports core events
+[   104.782] (**) Option "Device" "/dev/input/event21"
+[   104.782] (**) Option "_source" "server/udev"
+[   104.783] (II) event21 - HD WebCam: HD WebCam: is tagged by udev as: Keyboard
+[   104.783] (II) event21 - HD WebCam: HD WebCam: device is a keyboard
+[   104.783] (II) event21 - HD WebCam: HD WebCam: device removed
+[   104.783] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.0/input/input27/event21"
+[   104.783] (II) XINPUT: Adding extended input device "HD WebCam: HD WebCam" (type: KEYBOARD, id 15)
+[   104.783] (II) event21 - HD WebCam: HD WebCam: is tagged by udev as: Keyboard
+[   104.783] (II) event21 - HD WebCam: HD WebCam: device is a keyboard
+[   104.784] (II) config/udev: Adding input device SYN1B7F:00 06CB:7406 Touchpad (/dev/input/event11)
+[   104.784] (**) SYN1B7F:00 06CB:7406 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   104.784] (II) Using input driver 'libinput' for 'SYN1B7F:00 06CB:7406 Touchpad'
+[   104.891] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 27 paused 0
+[   104.891] (**) SYN1B7F:00 06CB:7406 Touchpad: always reports core events
+[   104.891] (**) Option "Device" "/dev/input/event11"
+[   104.891] (**) Option "_source" "server/udev"
+[   104.892] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: is tagged by udev as: Touchpad
+[   104.895] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: device is a touchpad
+[   104.895] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: device removed
+[   104.895] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-SYN1B7F:00/0018:06CB:7406.0008/input/input13/event11"
+[   104.896] (II) XINPUT: Adding extended input device "SYN1B7F:00 06CB:7406 Touchpad" (type: TOUCHPAD, id 16)
+[   104.896] (**) Option "AccelerationScheme" "none"
+[   104.896] (**) SYN1B7F:00 06CB:7406 Touchpad: (accel) selected scheme none/0
+[   104.896] (**) SYN1B7F:00 06CB:7406 Touchpad: (accel) acceleration factor: 2.000
+[   104.896] (**) SYN1B7F:00 06CB:7406 Touchpad: (accel) acceleration threshold: 4
+[   104.897] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: is tagged by udev as: Touchpad
+[   104.897] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: device is a touchpad
+[   104.898] (II) config/udev: Adding input device SYN1B7F:00 06CB:7406 Touchpad (/dev/input/mouse2)
+[   104.898] (II) No input driver specified, ignoring this device.
+[   104.898] (II) This device may have been added with another device file.
+[   104.899] (II) config/udev: Adding input device HDA Digital PCBeep (/dev/input/event14)
+[   104.899] (II) No input driver specified, ignoring this device.
+[   104.899] (II) This device may have been added with another device file.
+[   104.900] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event15)
+[   104.900] (II) No input driver specified, ignoring this device.
+[   104.900] (II) This device may have been added with another device file.
+[   104.901] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event16)
+[   104.901] (II) No input driver specified, ignoring this device.
+[   104.901] (II) This device may have been added with another device file.
+[   104.902] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event17)
+[   104.902] (II) No input driver specified, ignoring this device.
+[   104.902] (II) This device may have been added with another device file.
+[   104.902] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event18)
+[   104.903] (II) No input driver specified, ignoring this device.
+[   104.903] (II) This device may have been added with another device file.
+[   104.903] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event19)
+[   104.903] (II) No input driver specified, ignoring this device.
+[   104.903] (II) This device may have been added with another device file.
+[   104.904] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event20)
+[   104.904] (II) No input driver specified, ignoring this device.
+[   104.904] (II) This device may have been added with another device file.
+[   104.905] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[   104.905] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   104.905] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   104.907] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 28 paused 0
+[   104.907] (**) AT Translated Set 2 keyboard: always reports core events
+[   104.907] (**) Option "Device" "/dev/input/event3"
+[   104.907] (**) Option "_source" "server/udev"
+[   104.908] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   104.908] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[   104.908] (II) event3  - AT Translated Set 2 keyboard: device removed
+[   104.908] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[   104.908] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 17)
+[   104.910] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   104.910] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[   104.911] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[   104.911] (II) No input driver specified, ignoring this device.
+[   104.911] (II) This device may have been added with another device file.
+[   104.912] (II) config/udev: Adding input device Acer WMI hotkeys (/dev/input/event10)
+[   104.912] (**) Acer WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   104.912] (II) Using input driver 'libinput' for 'Acer WMI hotkeys'
+[   104.914] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 29 paused 0
+[   104.914] (**) Acer WMI hotkeys: always reports core events
+[   104.914] (**) Option "Device" "/dev/input/event10"
+[   104.914] (**) Option "_source" "server/udev"
+[   104.915] (II) event10 - Acer WMI hotkeys: is tagged by udev as: Keyboard
+[   104.915] (II) event10 - Acer WMI hotkeys: device is a keyboard
+[   104.915] (II) event10 - Acer WMI hotkeys: device removed
+[   104.915] (**) Option "config_info" "udev:/sys/devices/virtual/input/input11/event10"
+[   104.915] (II) XINPUT: Adding extended input device "Acer WMI hotkeys" (type: KEYBOARD, id 18)
+[   104.916] (II) event10 - Acer WMI hotkeys: is tagged by udev as: Keyboard
+[   104.916] (II) event10 - Acer WMI hotkeys: device is a keyboard
+[   104.943] (**) Razer Razer Basilisk: Applying InputClass "libinput keyboard catchall"
+[   104.943] (II) Using input driver 'libinput' for 'Razer Razer Basilisk'
+[   104.943] (II) systemd-logind: returning pre-existing fd for /dev/input/event5 13:69
+[   104.943] (**) Razer Razer Basilisk: always reports core events
+[   104.943] (**) Option "Device" "/dev/input/event5"
+[   104.943] (**) Option "_source" "_driver/libinput"
+[   104.943] (II) libinput: Razer Razer Basilisk: is a virtual subdevice
+[   104.943] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1532:0064.0002/input/input5/event5"
+[   104.943] (II) XINPUT: Adding extended input device "Razer Razer Basilisk" (type: KEYBOARD, id 19)
+[   104.944] (**) HOLTEK USB-HID Keyboard: Applying InputClass "libinput pointer catchall"
+[   104.944] (**) HOLTEK USB-HID Keyboard: Applying InputClass "libinput keyboard catchall"
+[   104.944] (II) Using input driver 'libinput' for 'HOLTEK USB-HID Keyboard'
+[   104.944] (II) systemd-logind: returning pre-existing fd for /dev/input/event8 13:72
+[   104.944] (**) HOLTEK USB-HID Keyboard: always reports core events
+[   104.944] (**) Option "Device" "/dev/input/event8"
+[   104.944] (**) Option "_source" "_driver/libinput"
+[   104.944] (II) libinput: HOLTEK USB-HID Keyboard: is a virtual subdevice
+[   104.944] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.2/0003:04D9:A131.0006/input/input8/event8"
+[   104.944] (II) XINPUT: Adding extended input device "HOLTEK USB-HID Keyboard" (type: KEYBOARD, id 20)
+[   106.542] (II) intel(0): EDID vendor "LGD", prod id 1135
+[   106.542] (II) intel(0): Printing DDC gathered Modelines:
+[   106.542] (II) intel(0): Modeline "1920x1080"x0.0  138.70  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.7 kHz eP)
+[   113.591] (**) Option "fd" "15"
+[   113.591] (II) event2  - Power Button: device removed
+[   113.591] (**) Option "fd" "18"
+[   113.591] (II) event13 - Video Bus: device removed
+[   113.592] (**) Option "fd" "19"
+[   113.592] (II) event12 - Video Bus: device removed
+[   113.592] (**) Option "fd" "20"
+[   113.592] (II) event1  - Sleep Button: device removed
+[   113.592] (**) Option "fd" "21"
+[   113.592] (II) event4  - Razer Razer Basilisk: device removed
+[   113.592] (**) Option "fd" "22"
+[   113.592] (**) Option "fd" "23"
+[   113.592] (II) event6  - Razer Razer Basilisk: device removed
+[   113.592] (**) Option "fd" "24"
+[   113.592] (II) event7  - HOLTEK USB-HID Keyboard: device removed
+[   113.592] (**) Option "fd" "25"
+[   113.592] (**) Option "fd" "26"
+[   113.592] (II) event21 - HD WebCam: HD WebCam: device removed
+[   113.592] (**) Option "fd" "27"
+[   113.592] (II) event11 - SYN1B7F:00 06CB:7406 Touchpad: device removed
+[   113.592] (**) Option "fd" "28"
+[   113.592] (II) event3  - AT Translated Set 2 keyboard: device removed
+[   113.592] (**) Option "fd" "29"
+[   113.592] (II) event10 - Acer WMI hotkeys: device removed
+[   113.592] (**) Option "fd" "22"
+[   113.592] (II) event5  - Razer Razer Basilisk: device removed
+[   113.592] (**) Option "fd" "25"
+[   113.592] (II) event8  - HOLTEK USB-HID Keyboard: device removed
+[   113.592] (II) UnloadModule: "libinput"
+[   113.592] (II) systemd-logind: not releasing fd for 13:72, still in use
+[   113.592] (II) UnloadModule: "libinput"
+[   113.592] (II) systemd-logind: not releasing fd for 13:69, still in use
+[   113.592] (II) UnloadModule: "libinput"
+[   113.592] (II) systemd-logind: releasing fd for 13:74
+[   113.674] (II) UnloadModule: "libinput"
+[   113.674] (II) systemd-logind: releasing fd for 13:67
+[   113.720] (II) UnloadModule: "libinput"
+[   113.720] (II) systemd-logind: releasing fd for 13:75
+[   113.773] (II) UnloadModule: "libinput"
+[   113.773] (II) systemd-logind: releasing fd for 13:85
+[   113.826] (II) UnloadModule: "libinput"
+[   113.827] (II) systemd-logind: releasing fd for 13:72
+[   113.866] (II) UnloadModule: "libinput"
+[   113.867] (II) systemd-logind: releasing fd for 13:71
+[   113.893] (II) UnloadModule: "libinput"
+[   113.893] (II) systemd-logind: releasing fd for 13:70
+[   113.920] (II) UnloadModule: "libinput"
+[   113.920] (II) systemd-logind: releasing fd for 13:69
+[   113.960] (II) UnloadModule: "libinput"
+[   113.960] (II) systemd-logind: releasing fd for 13:68
+[   114.026] (II) UnloadModule: "libinput"
+[   114.027] (II) systemd-logind: releasing fd for 13:65
+[   114.053] (II) UnloadModule: "libinput"
+[   114.053] (II) systemd-logind: releasing fd for 13:76
+[   114.126] (II) UnloadModule: "libinput"
+[   114.127] (II) systemd-logind: releasing fd for 13:77
+[   114.187] (II) UnloadModule: "libinput"
+[   114.187] (II) systemd-logind: releasing fd for 13:66
+[   114.248] (II) Server terminated successfully (0). Closing log file.

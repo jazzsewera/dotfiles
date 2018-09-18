@@ -1,0 +1,32 @@
+"*":
+  core:
+    disabledPackages: [
+      "markdown-preview"
+      "spell-check"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "nucleus-dark-ui"
+      "pure-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro for Powerline, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 18
+  "exception-reporting":
+    userId: "b1fa58d7-e616-4f06-aedb-f8eef073c9f6"
+  "markdown-preview-plus":
+    syntaxThemeName: "city-lights-syntax"
+  "spell-check":
+    locales: [
+      "pl-PL"
+      "en-US"
+    ]
+  welcome:
+    showOnStartup: false
+"autocomplete-plus":
+  suppressActivationForEditorClasses: [
+    "vim-mode-plus.normal-mode"
+    "vim-mode-plus.visual-mode"
+    "vim-mode-plus.operator-pending-mode"
+    "vim-mode-plus.insert-mode.replace"
+  ]
