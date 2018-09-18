@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="vendor/js/ionic.bundle.min.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="vendor/css/ionic.min.css"/>
+undefined
+
+
+  </head>
+  <body ng-app="cors" ng-controller="PopupCtrl">
+    <div class="bar bar-header bar-dark">
+      <h1 class="title">{{i18n.settings}}</h1>
+    </div>
+    <div class="has-header">
+      <div class="list">
+        <ion-toggle ng-model="active" toggle-class="toggle-calm">{{i18n.sharingHeader}}</ion-toggle>
+        <div class="item item-divider">
+          {{i18n.allowHeaders}}
+        </div>
+        <text-option option="exposedHeaders" placeholder="comma-separated list of headers ..."></text-option>
+        <div class="item item-divider">
+          {{i18n.urlPatterns}}
+          <a class="icon ion-link" ng-click="openInNewTab('https://developer.chrome.com/extensions/match_patterns');"></a>
+        </div>
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="URL or URL pattern" ng-model="url" submit-on-enter="addUrl()">
+          </label>
+          <a class="button button-icon button-small icon ion-plus-circled submit-action" ng-click="addUrl();"></a>
+        </div>
+        <div class="item item-icon-right animate-enter-leave" ng-repeat="url in urls">
+          {{url}}
+          <a class="button button-icon button-small icon ion-ios7-trash-outline" ng-click="removeUrl($index);"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

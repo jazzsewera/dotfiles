@@ -1,0 +1,16 @@
+[General]
+copySaveLocation=false
+default-save-image-format=png
+default-save-location[$e]=$HOME/Pictures/Screenshots
+last-saved-to[$e]=$HOME/Pictures/Screenshots
+lastSaveAsLocation=file:///home/jazz/Pictures/Screenshots/
+save-filename-format=ss_%Y-%M-%D@%H:%m:%S
+
+[GuiConfig]
+captureDelay=2
+captureModeIndex=3
+lastUsedSaveMode=1
+rememberLastRectangularRegion=false
+showMagnifier=false
+useLightMaskColour=false
+window-position=569,244

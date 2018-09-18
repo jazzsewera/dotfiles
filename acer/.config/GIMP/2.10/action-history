@@ -1,0 +1,14 @@
+# GIMP action-history
+
+(history-item "layers-mask-add-button" 1)
+(history-item "image-new" 1)
+(history-item "file-open-as-layers" 1)
+(history-item "file-open" 0)
+(history-item "layers-mask-add" 0)
+(history-item "layers-edit" 0)
+(history-item "select-none" 0)
+(history-item "layers-new" 0)
+(history-item "file-export-as" 0)
+(history-item "file-quit" 1)
+
+# end of action-history
