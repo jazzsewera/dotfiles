@@ -26,3 +26,8 @@ RPROMPT='%B%F{magenta}[%f%b%B%F{cyan}%T%f%b%B%F{magenta}]%f%b'
 
 alias please='sudo $(fc -ln -1)'
 
+alias ls='ls --color=auto'
+alias ll='ls -lA --color=auto'
+alias l.='ls -d .* --color=auto'
+alias grep='grep --color=auto'
+
