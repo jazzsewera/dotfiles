@@ -1,12 +1,12 @@
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' format 'zshsense %d>'
+zstyle ':completion:*' format '%F{blue}zshsense%f %F{cyan}%d%f%F{magenta}>%f'
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
 zstyle ':completion:*' max-errors 2
 zstyle ':completion:*' menu select=8
-zstyle ':completion:*' prompt 'zshsense %e>'
+zstyle ':completion:*' prompt '%F{blue}zshsense%f %F{cyan}%e%f%F{magenta}>%f'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle :compinstall filename '/home/jazz/.zshrc'
 
