@@ -56,7 +56,7 @@ font-1 = "UbuntuCondensed Nerd Font:size=6:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=6:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
-modules-center = backlight music pulseaudio
+modules-center = backlight music mpd pulseaudio
 modules-right = redshift xkeyboard wlan eth battery date
 
 tray-position = right
