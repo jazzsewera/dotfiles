@@ -57,7 +57,7 @@ font-2 = "Ubuntu Nerd Font:size=6:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
 modules-center = backlight music pulseaudio
-modules-right = redshift xkeyboard wlan battery date
+modules-right = redshift xkeyboard wlan eth battery date
 
 tray-position = right
 tray-padding = 3
@@ -157,7 +157,7 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next>
 
 icon-prev = 
 icon-stop = 
@@ -165,8 +165,8 @@ icon-play = 
 icon-pause = 
 icon-next = 
 
-label-song-maxlen = 25
-label-song-ellipsis = true
+;label-song-maxlen = 25
+;label-song-ellipsis = true
 
 [module/backlight]
 type = internal/backlight
@@ -216,11 +216,10 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.primary}
 label-connected = %essid%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected = 睊
+label-disconnected-foreground = #666
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.secondary}
 
 ramp-signal-0 = 直20%: 
 ramp-signal-1 = 直40%: 
@@ -231,19 +230,21 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp3s0
+interface = enp1s0
 interval = 3.0
 
+format-connected = <label-connected>
+format-connected-prefix = " "
+
 format-connected-underline = ${colors.primary}
-format-connected-prefix = 
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
-format-disconnected = "disconnected"
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+;format-disconnected = "disconnected"
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.secondary}
+label-disconnected = 
+label-disconnected-foreground = #666
 
 [module/date]
 type = internal/date
@@ -372,7 +373,7 @@ animation-charging-framerate = 1000
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 75
 
 format = <ramp> <label>
 format-underline = ${colors.secondary}
