@@ -64,6 +64,7 @@
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colorize
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -140,4 +141,8 @@ alias ll='ls -lA --color=auto'
 alias l.='ls -d .* --color=auto'
 alias grep='grep --color=auto'
 alias gist='git status -s'
+
+function cless {
+	ccat $1 | less
+}
 
