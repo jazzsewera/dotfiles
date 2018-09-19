@@ -1,0 +1,14 @@
+# Install git and curl
+sudo pacman -S --needed git curl
+
+# Clone vundle from git
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Configure plugins: Edit the .vimrc file or copy it from dotfiles
+cp ~/dotfiles/acer/.vimrc ~/
+
+# Launch vim and TOTO TAKE IT AWAY
+:PluginInstall
+
+# From time to time
+:PluginUpdate

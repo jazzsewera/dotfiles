@@ -1,0 +1,8 @@
+# Install wget:
+sudo pacman -S wget
+
+# Clone oh-my-zsh from git:
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# Edit ~/.zshrc or copy one from dotfiles/acer/.zshrc
+cp ~/dotfiles/acer/.zshrc ~/.zshrc
