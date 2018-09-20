@@ -1,5 +1,6 @@
-#include "/home/jazz/RiceDotFiles/Xthemes/atelierforest.dark.Xresources"
-
+! INSERT YOUR THEME HERE (themes from github:logico-dev/Xresources-themes)
+! #include "/home/jazz/RiceDotFiles/Xthemes/atelierforest.dark.Xresources"
+#include "/home/jazz/RiceDotFiles/Xthemes/base16-atelier-forest-256.Xresources"
 URxvt.font: xft:SauceCodePro Nerd Font Mono:style=Regular:size=13, xft:DejaVuSans:size=10
 URxvt.scrollBar: false
 URxvt.borderless: true
