@@ -55,12 +55,13 @@ font-0 = "Ubuntu Nerd Font:pixelsize=8;1"
 font-1 = "UbuntuCondensed Nerd Font:size=6:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=6:antialias=false;1"
 
-modules-left = i3 cpu temperature memory filesystem
+modules-left = i3 cpu memory filesystem
 modules-center = backlight music mpd pulseaudio
-modules-right = redshift xkeyboard wlan eth battery date
+modules-right = redshift xkeyboard wlan eth date
 
 tray-position = right
-tray-padding = 3
+tray-padding = 2
+tray-detached = false
 ;tray-transparent = true
 ;tray-background = #0063ff
 
