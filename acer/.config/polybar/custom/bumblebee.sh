@@ -1,7 +1,7 @@
 
 #!/bin/bash
 check=$(optirun --status | grep "Discrete video card is off" -c)
-icon=""
+icon="nV"
 
 if [ "1" = $check ]; then
     # Discrete card off
