@@ -57,7 +57,7 @@ font-2 = "Ubuntu Nerd Font:size=8:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
 modules-center = backlight music mpd pulseaudio
-modules-right = bumblebee redshift xkeyboard wlan eth battery date
+modules-right = bumblebee redshift xkeyboard wlan eth battery khal date
 
 tray-position = right
 tray-padding = 3
@@ -276,7 +276,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 
 label = %date% %time%
@@ -286,6 +286,10 @@ type = custom/script
 interval = 4
 exec = ~/.config/polybar/custom/bumblebee.sh
 
+[module/khal]
+type = custom/script
+interval = 1200
+exec = ~/.config/polybar/custom/khal.sh
 
 [module/volume]
 type = internal/volume
