@@ -14,6 +14,7 @@ set $alt Mod1
 
 # exec_always udiskie -N2
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
+exec --no-startup-id xinput set-prop 12 273 1 &
 exec --no-startup-id redshift
 exec_always --no-startup-id feh --bg-scale /home/jazz/Pictures/Wallpapers/wallpaper.jpg
 exec --no-startup-id udiskie &
