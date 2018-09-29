@@ -14,6 +14,7 @@ set $alt Mod1
 
 # exec_always udiskie -N2
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
+exec --no-startup-id xinput set-prop 11 280 1 &
 exec --no-startup-id redshift
 exec_always --no-startup-id feh --bg-scale /home/jazz/Pictures/Wallpapers/wallpaper.jpg
 exec --no-startup-id udiskie &
@@ -27,6 +28,10 @@ exec --no-startup-id i3-msg 'workspace "2"; exec i3-sensible-terminal -e zsh -c 
 exec i3-msg 'workspace "1"; exec atom'
 exec_always --no-startup-id setxkbmap pl &
 exec --no-startup-id betterlockscreen -l
+bindsym Print exec scrot '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
+bindsym $mod+Print exec scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
+bindsym control+Print exec scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
