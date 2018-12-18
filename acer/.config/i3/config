@@ -200,15 +200,16 @@ bindsym $mod+r mode "resize"
 new_window none
 
 # color definition
-set $bg #434343
+set $bg #343434
 set $tx #b5b29d
+set $tu #d5feff
 set $ia #878787
-set $ac #696969
+set $ac #151515
 set $rd #874545
 
-client.focused	$ac $ac $tx
+client.focused	$ac $ac $tu
 client.unfocused $bg $bg $ia
-client.focused_inactive $bg $bg $ac
+client.focused_inactive $bg $bg $tx
 client.urgent	$rd $rd $tx
 
 bindsym $mod+z exec --no-startup-id betterlockscreen -l
