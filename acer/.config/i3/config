@@ -12,26 +12,20 @@
 set $mod Mod4
 set $alt Mod1
 
-# exec_always udiskie -N2
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
 exec --no-startup-id xinput set-prop 11 280 1 &
 exec --no-startup-id redshift
 exec_always --no-startup-id feh --bg-scale /home/jazz/Pictures/Wallpapers/wallpaper.jpg
 exec --no-startup-id udiskie &
-# workspace "2"
-# exec audacious
-# workspace "1"
-# exec firefox
-# workspace "3"
-# exec i3-sensible-terminal
 exec --no-startup-id i3-msg 'workspace "2"; exec i3-sensible-terminal -e zsh -c "ncmpcpp"; workspace "1"'
-exec i3-msg 'workspace "1"; exec atom'
+#exec i3-msg 'workspace "1"; exec atom'
 exec_always --no-startup-id setxkbmap pl &
 exec --no-startup-id betterlockscreen -l
 bindsym Print exec scrot '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+Print exec scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym control+Print exec scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+P exec mpc toggle
+bindsym $mod+M exec xrandr --addmode HDMI1 1920x1080 && xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1 && sleep 0.4 && exec /home/jazz/.config/polybar/launch.sh &
 
 
 # Font for window titles. Will also be used by the bar unless a different font
