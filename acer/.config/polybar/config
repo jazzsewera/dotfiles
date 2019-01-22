@@ -57,7 +57,7 @@ font-2 = "Ubuntu Nerd Font:size=8:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
 modules-center = backlight music mpd pulseaudio
-modules-right = bumblebee redshift xkeyboard wlan eth battery khal date
+modules-right = bumblebee redshift xkeyboard wlan eth battery khal updates date
 
 tray-position = right
 tray-padding = 3
@@ -338,6 +338,11 @@ exec = ~/.config/polybar/custom/bumblebee.sh
 type = custom/script
 interval = 1200
 exec = ~/.config/polybar/custom/khal.sh
+
+[module/updates]
+type = custom/script
+interval = 1200
+exec = ~/.config/polybar/custom/updates.sh
 
 [module/volume]
 type = internal/volume
