@@ -101,7 +101,7 @@ font-1 = "UbuntuCondensed Nerd Font:size=7:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=7:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
-modules-center = music pulseaudio
+modules-center = music mpd pulseaudio
 modules-right = redshift khal date
 
 tray-position = right
@@ -341,7 +341,7 @@ exec = ~/.config/polybar/custom/khal.sh
 
 [module/updates]
 type = custom/script
-interval = 1200
+interval = 400
 exec = ~/.config/polybar/custom/updates.sh
 
 [module/volume]
@@ -412,7 +412,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
+full-at = 96
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.alert}
