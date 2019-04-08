@@ -2,7 +2,6 @@
 
 WP_DIR=/home/jazz/Pictures/Wallpapers
 BLUR=blurred
-filename=$WP_DIR/$BLUR/$(cat cur_bg.txt)
 
 insidecolor=00000000
 ringcolor=ffffffff
@@ -21,7 +20,7 @@ font="monospace"
 locktext=$(date +%A),\ $(date --iso-8601=date)
 
 i3lock \
-  -t -i "$filename" \
+  -t -i "$WP_DIR/$BLUR/$(cat cur_bg.txt)" \
   --timepos='x+110:h-70' \
   --datepos='x+43:h-45' \
   --clock --date-align 1 --datestr "$locktext" \
