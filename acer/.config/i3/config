@@ -21,7 +21,7 @@ exec --no-startup-id i3-msg 'workspace "2"'
 exec --no-startup-id i3-sensible-terminal -e zsh -c "ncmpcpp"
 exec --no-startup-id i3-msg 'workspace "1"'
 exec_always --no-startup-id setxkbmap pl &
-exec_always --no-startup-id /home/jazz/.config/i3/lockscreen.sh
+exec --no-startup-id /home/jazz/.config/i3/lockscreen.sh
 bindsym Print exec --no-startup-id scrot '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
@@ -215,6 +215,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym $mod+XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
+bindsym $mod+XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
 bindsym XF86TouchpadToggle exec /home/jazz/RiceDotFiles/toggletouchpad.sh # toggle touchpad
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
