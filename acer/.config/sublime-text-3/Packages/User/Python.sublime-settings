@@ -1,0 +1,9 @@
+// These settings override both User and Default settings for the Python syntax
+{
+  "tab_size": 4,
+  "translate_tabs_to_spaces": true,
+  "indent_to_bracket": true,
+  "detect_indentation": false,
+  "wrap_width": 80,
+  "ensure_newline_at_eof_on_save": true
+}

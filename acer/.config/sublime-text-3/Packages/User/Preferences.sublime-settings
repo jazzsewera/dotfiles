@@ -1,0 +1,17 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Materialize/schemes/Material Spaceblack.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "SauceCodePro Nerd Font",
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Markdown"
+	],
+	"vintage_start_in_command_mode": true,
+	"shift_tab_unintend": true,
+	"tab_size": 2,
+	"theme": "Material Spaceblack.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
