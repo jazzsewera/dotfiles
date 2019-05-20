@@ -20,7 +20,7 @@ if (x == 0) {
 W przypadku funkcji trzeba umieszczać nawiasy bezpośrednio po nazwie funkcji, ale po wyrażeniach typu `if`, czy `for` już nie.
 W celu rozróżnienia funkcji od słów kluczowych, najlepiej jest umieszczać nawiasy następująco:
 
-```
+```c
 if (a != 1) {
   for (int i = 0; i < 5, i++) {
     function1();
