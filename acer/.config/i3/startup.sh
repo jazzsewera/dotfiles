@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/home/jazz/.config/i3/wallpaper.sh
-/home/jazz/.config/i3/lockscreen.sh
+wallschd &
 
+lockscreen /home/jazz/Pictures/Wallpapers/arch_logo_mountains.jpg

@@ -56,8 +56,8 @@ font-1 = "UbuntuCondensed Nerd Font:size=8:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=8:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
-modules-center = backlight music mpd pulseaudio
-modules-right = bumblebee redshift xkeyboard wlan eth battery khal updates date
+modules-center = backlight music mpd pulseaudio paswitch
+modules-right = redshift xkeyboard wlan eth battery khal updates date
 
 tray-position = right
 tray-padding = 3
@@ -73,7 +73,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 [bar/secondary]
-monitor = ${env:MONITOR:HDMI1}
+monitor = ${env:MONITOR:DP1}
 width = 100%
 height = 25
 ;offset-x = 2%
@@ -101,7 +101,7 @@ font-1 = "UbuntuCondensed Nerd Font:size=7:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=7:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
-modules-center = music mpd pulseaudio
+modules-center = music mpd pulseaudio paswitch
 modules-right = redshift khal date
 
 tray-position = right
@@ -329,6 +329,13 @@ format-prefix-foreground = ${colors.foreground-alt}
 
 label = %date% %time%
 
+[module/paswitch]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/custom/paswitch.sh
+click-left = paswitch alsa_output.pci-0000_00_1f.3.analog-stereo
+click-right = paswitch alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo
+
 [module/bumblebee]
 type = custom/script
 interval = 4
@@ -410,6 +417,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
+interval = 0.5
 battery = BAT0
 adapter = ADP1
 full-at = 96
@@ -472,15 +480,15 @@ type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.usb-Cmedia_ROCCAT_Juke_6709-00.analog-stereo
+; sink = 
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
-use-ui-max = true
+use-ui-max = false
 
 ; Interval for volume increase/decrease (in percent points) (unreleased)
 ; Default: 5
-interval = 5
+interval = 2
 
 format-volume-prefix = "墳 | "
 format-muted-prefix = "婢 | "
