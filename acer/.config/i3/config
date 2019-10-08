@@ -12,12 +12,13 @@
 set $mod Mod4
 set $alt Mod1
 
-exec --no-startup-id xrandr --dpi 142
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
+exec --no-startup-id xrandr --dpi 94
 exec --no-startup-id xinput set-prop 11 280 1 &
 exec --no-startup-id redshift
 exec --no-startup-id udiskie &
+exec --no-startup-id polybar main &
 exec_always --no-startup-id setxkbmap pl &
 exec --no-startup-id /home/jazz/.config/i3/startup.sh
 exec --no-startup-id i3-msg 'workspace "2"; exec i3-sensible-terminal -e zsh -c "ncmpcpp"; workspace "1"' 
@@ -25,7 +26,7 @@ bindsym Print exec --no-startup-id scrot '/home/jazz/Pictures/Screenshots/ss_%Y-
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+P exec --no-startup-id mpc toggle
-bindsym $mod+M exec --no-startup-id xrandr --addmode HDMI1 1920x1080 && xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1 && sleep 0.6 && exec /home/jazz/.config/polybar/launch.sh &
+bindsym $mod+M exec --no-startup-id /home/jazz/.config/i3/monitor.sh
 bindsym $mod + comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo -2%
 bindsym $mod + period exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo +2%
 bindsym $mod + c exec xclip -i /dev/null

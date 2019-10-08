@@ -72,8 +72,53 @@ wm-restack = i3
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-[bar/secondary]
-monitor = ${env:MONITOR:DP1}
+[bar/main_multihead]
+monitor = ${env:MONITOR:DP2-1}
+width = 100%
+height = 30
+;offset-x = 2%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "Ubuntu Nerd Font:pixelsize=11;1"
+font-1 = "UbuntuCondensed Nerd Font:size=8:antialias=false;1"
+font-2 = "Ubuntu Nerd Font:size=8:antialias=false;1"
+
+modules-left = i3
+modules-center = title
+modules-right = mpd pulseaudio paswitch text-padding date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+;tray-transparent = true
+;tray-background = #0063ff
+
+wm-restack = i3
+
+;override-redirect = true
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[bar/tall_multihead]
+monitor = ${env:MONITOR:HDMI1}
 width = 100%
 height = 25
 ;offset-x = 2%
@@ -101,8 +146,7 @@ font-1 = "UbuntuCondensed Nerd Font:size=7:antialias=false;1"
 font-2 = "Ubuntu Nerd Font:size=7:antialias=false;1"
 
 modules-left = i3 cpu temperature memory filesystem
-modules-center = music mpd pulseaudio paswitch
-modules-right = redshift khal date
+modules-right = mpd pulseaudio text-padding date
 
 tray-position = right
 tray-padding = 3
@@ -117,9 +161,58 @@ wm-restack = i3
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-[module/xwindow]
+[bar/secondary_multihead]
+monitor = ${env:MONITOR:DP2-2}
+width = 100%
+height = 25
+;offset-x = 2%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 3
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "Ubuntu Nerd Font:pixelsize=10;1"
+font-1 = "UbuntuCondensed Nerd Font:size=7:antialias=false;1"
+font-2 = "Ubuntu Nerd Font:size=7:antialias=false;1"
+
+modules-left = i3
+modules-center = music mpd pulseaudio paswitch
+modules-right = redshift xkeyboard wlan eth battery khal updates date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+;tray-transparent = true
+;tray-background = #0063ff
+
+wm-restack = i3
+
+;override-redirect = true
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[module/title]
 type = internal/xwindow
-label = %title:0:30:...%
+format = <label>
+label = %title%
+label-maxlen = 100
+label-empty = jazz-arch
+label-empty-foreground = #444
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -258,6 +351,10 @@ inherit = module/backlight
 type = internal/backlight
 card = intel_backlight
 
+[module/text-padding]
+type = custom/text
+content = " "
+
 [module/cpu]
 type = internal/cpu
 interval = 2
@@ -316,10 +413,10 @@ label-disconnected-foreground = #666
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 0.5
 
-date = " %d.%m.%Y |"
-date-alt = " %Y-%m-%d"
+date = " %Y-%m-%d  "
+date-alt = " %Y-%m-%d  "
 
 time = %H:%M
 time-alt = %H:%M:%S
