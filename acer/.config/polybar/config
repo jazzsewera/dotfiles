@@ -452,6 +452,7 @@ interval = 1
 exec = ~/.config/polybar/custom/paswitch.sh
 click-left = paswitch alsa_output.pci-0000_00_1f.3.analog-stereo
 click-right = paswitch alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo
+click-middle = paswitch combined
 
 [module/bumblebee]
 type = custom/script
