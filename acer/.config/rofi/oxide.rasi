@@ -133,16 +133,17 @@ entry {
     text-color: @normal-foreground;
 }
 prompt {
-    padding:	0 0 0 3;
+    padding:	0 3 0 9;
     spacing:    0;
     background-color: @normal-foreground;
     text-color: @normal-background;
 }
 textbox-prompt-colon {
     expand:     false;
-    str:        "";
+    str:        " » ";
     margin:     0px 0.3000em 0.0000em 0.0000em;
-    text-color: inherit;
+    background-color: @normal-foreground;
+    text-color: @normal-background;
 }
 error-message {
     background-color: rgba ( 0, 0, 0, 0 % );
