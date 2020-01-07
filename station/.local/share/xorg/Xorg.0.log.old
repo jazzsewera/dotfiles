@@ -1,0 +1,33 @@
+[    27.474] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[    27.475] 
+X.Org X Server 1.20.0
+X Protocol Version 11, Revision 0
+[    27.475] Build Operating System: Linux Arch Linux
+[    27.475] Current Operating System: Linux jazz-arch 4.17.14-arch1-1-ARCH #1 SMP PREEMPT Thu Aug 9 11:56:50 UTC 2018 x86_64
+[    27.475] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=1f68b2a4-24c3-4e30-a5de-099d42e23366 rw quiet
+[    27.475] Build Date: 18 June 2018  03:12:37PM
+[    27.475]  
+[    27.475] Current version of pixman: 0.34.0
+[    27.475] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    27.475] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    27.475] (==) Log file: "/home/jazz/.local/share/xorg/Xorg.0.log", Time: Tue Aug 21 21:14:53 2018
+[    27.476] (==) Using config file: "/etc/X11/xorg.conf"
+[    27.476] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    27.476] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    27.476] Parse error on line 1 of section InputClass in file /etc/X11/xorg.conf.d/keyboard.conf
+	"setxkbmap" is not a valid keyword in this section.
+[    27.476] (EE) Problem parsing the config file
+[    27.476] (EE) Error parsing the config file
+[    27.476] (EE) 
+Fatal server error:
+[    27.476] (EE) no screens found(EE) 
+[    27.476] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[    27.476] (EE) Please also check the log file at "/home/jazz/.local/share/xorg/Xorg.0.log" for additional information.
+[    27.476] (EE) 
+[    27.476] (EE) Server terminated with error (1). Closing log file.

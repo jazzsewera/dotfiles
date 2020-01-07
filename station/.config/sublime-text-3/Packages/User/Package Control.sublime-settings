@@ -1,0 +1,33 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Anaconda",
+		"Clang Format",
+		"ColorPicker",
+		"EasyClangComplete",
+		"Git",
+		"HTML Boilerplate",
+		"HTML5",
+		"INI",
+		"JavaScript Snippets",
+		"jQuery",
+		"MarkdownEditing",
+		"Materialize",
+		"Package Control",
+		"Python 3",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-flake8",
+		"SublimeLinter-gcc",
+		"SublimeLinter-gjslint",
+		"SublimeLinter-mdl",
+		"SublimeREPL",
+		"Terminus"
+	]
+}

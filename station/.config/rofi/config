@@ -1,0 +1,7 @@
+! Rofi config file
+rofi.lines: 12
+rofi.font: Source Sans Pro 13
+rofi.show-icons: false
+rofi.display-window: Window
+rofi.display-drun: Search
+rofi.theme: /home/jazz/.config/rofi/oxide.rasi

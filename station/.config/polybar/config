@@ -1,0 +1,640 @@
+;============================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;============================================================
+
+
+;========================
+;         _            
+;  __ ___| |___ _ _ ___
+; / _/ _ \ / _ \ '_(_-<
+; \__\___/_\___/_| /__/
+;                     
+;========================
+
+[colors]
+background = #161616
+background-alt = #444
+bg-alt-secondary = #272727
+
+border = #111111
+
+foreground = #dfdfdf
+foreground-alt = #ccc
+
+primary = #267fb5
+secondary = #748aa6
+secondary-grey = #747474
+alert = #FF410D
+
+
+;======================
+;  _                 
+; | |__  __ _ _ _ ___
+; | '_ \/ _` | '_(_-<
+; |_.__/\__,_|_| /__/
+;                    
+;======================
+
+[bar/main]
+monitor = ${env:MONITOR:DP-1}
+monitor-exact = true
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = ${colors.border}
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-1 = "NotoSans Nerd Font:size=8:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=8:antialias=false;1"
+
+modules-left = i3 cpu temperature memory filesystem
+modules-center = backlight music mpd pulseaudio paswitch
+modules-right = redshift xkeyboard wlan eth battery khal updates date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+
+;=========================================
+;            _ _   _ _                _ 
+;  _ __ _  _| | |_(_) |_  ___ __ _ __| |
+; | '  \ || | |  _| | ' \/ -_) _` / _` |
+; |_|_|_\_,_|_|\__|_|_||_\___\__,_\__,_|
+;                                       
+;=========================================
+
+
+[bar/center_multihead]
+
+monitor = ${env:MONITOR:DP2-1}
+monitor-exact = true
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = ${colors.border}
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-1 = "NotoSans Nerd Font:size=8:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=8:antialias=false;1"
+font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+
+modules-left = i3
+modules-center = title
+modules-right = mpd pulseaudio paswitch text-padding date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+dpi-x = 94
+dpi-y = 94
+
+
+;=================================================================
+
+
+[bar/tall_multihead]
+monitor = ${env:MONITOR:HDMI1}
+monitor-exact = true
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = ${colors.border}
+
+padding-left = 0
+padding-right = 3
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-1 = "NotoSans Nerd Font:size=7:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=7:antialias=false;1"
+font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+
+modules-left = i3 cpu temperature memory filesystem
+modules-right = mpd pulseaudio text-padding date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+dpi-x = 94
+dpi-y = 94
+
+
+;=================================================================
+
+
+[bar/secondary_multihead]
+monitor = ${env:MONITOR:DP2-2}
+monitor-exact = true
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = ${colors.border}
+
+padding-left = 0
+padding-right = 3
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-1 = "NotoSans Nerd Font:size=7:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=7:antialias=false;1"
+font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+
+modules-left = i3
+modules-center = music mpd pulseaudio paswitch
+modules-right = redshift xkeyboard wlan eth battery khal updates date
+
+tray-position = right
+tray-padding = 3
+tray-detached = false
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+dpi-x = 94
+dpi-y = 94
+
+
+;==================================
+;                _      _        
+;  _ __  ___  __| |_  _| |___ ___
+; | '  \/ _ \/ _` | || | / -_|_-<
+; |_|_|_\___/\__,_|\_,_|_\___/__/
+;                                
+;==================================
+
+
+[module/i3]
+
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-background = ${colors.background-alt}
+label-focused-underline = ${colors.primary}
+label-focused-padding = 2
+label-focused-font = 4
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-padding = ${self.label-focused-padding}
+label-unfocused-font = ${self.label-focused-font}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-background = ${colors.bg-alt-secondary}
+label-visible-underline = ${colors.secondary-grey}
+label-visible-padding = ${self.label-focused-padding}
+label-visible-font = ${self.label-focused-font}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = ${self.label-focused-padding}
+label-urgent-font = ${self.label-focused-font}
+
+label-mode = 
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+label-mode-font = ${self.label-focused-font}
+
+; workspace-icons ws-icon-x = label;icon --yeah--
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-default = 
+
+
+[module/title]
+type = internal/xwindow
+format = <label>
+label = %title%
+label-maxlen = 100
+label-empty = jazz-arch
+label-empty-foreground = #444
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format = <label-layout> <label-indicator>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.secondary}
+
+label-indicator-on = %icon%
+
+label-layout = %layout%
+label-layout-underline = ${colors.secondary}
+
+indicator-icon-0 = caps lock;;בּ
+
+label-indicator-padding = 2
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /home/jazz/Data
+
+label-mounted = %{F#267fb5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %{F#267fb5}%mountpoint%%{F-}: not mounted
+label-unmounted-foreground = #444
+
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-random>  <icon-consume>
+
+icon-prev = 玲
+icon-stop = 栗
+icon-play = 契
+icon-pause = 
+icon-next = 怜
+icon-random = 咽
+icon-random-font = 2
+icon-consume = 
+icon-consume-font = 2
+
+toggle-on-foreground = #eee
+toggle-off-foreground = #666
+
+;label-song-maxlen = 25
+;label-song-ellipsis = true
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+
+format = <bar> <label>
+format-prefix = " "
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 1
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = ${colors.alert}
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/backlight
+type = internal/backlight
+card = intel_backlight
+
+[module/text-padding]
+type = custom/text
+content = " "
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.alert}
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.primary}
+label = %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlp6s0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = ${colors.primary}
+label-connected = %essid%
+
+label-disconnected = 睊
+label-disconnected-foreground = #666
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.secondary}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = "直20%: " 
+ramp-signal-1 = "直40%: "
+ramp-signal-2 = "直60%: "
+ramp-signal-3 = "直80%: "
+ramp-signal-4 = "直100%: "
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = enp7s0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-underline = ${colors.primary}
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+;format-disconnected = 
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.secondary}
+label-disconnected = 
+label-disconnected-foreground = #666
+
+[module/date]
+type = internal/date
+interval = 0.5
+
+date = " %Y-%m-%d  "
+date-alt = " %Y-%m-%d  "
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = %date% %time%
+
+[module/paswitch]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/custom/paswitch.sh
+click-left = paswitch alsa_output.pci-0000_00_1f.3.analog-stereo
+click-right = paswitch alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo
+click-middle = paswitch combined
+
+[module/bumblebee]
+type = custom/script
+interval = 4
+exec = ~/.config/polybar/custom/bumblebee.sh
+
+[module/khal]
+type = custom/script
+interval = 1200
+exec = ~/.config/polybar/custom/khal.sh
+
+[module/updates]
+type = custom/script
+interval = 400
+exec = ~/.config/polybar/custom/updates.sh
+
+[module/volume]
+type = internal/volume
+
+master-mixer = Master
+master-soundcard = hw:0
+
+format-volume = <bar-volume> <label-volume>
+label-volume-foreground = ${root.foreground}
+
+format-volume-prefix = "墳 "
+
+format-muted-prefix = "婢 "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = Sound is muted.
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.primary}
+bar-volume-foreground-1 = ${colors.primary}
+bar-volume-foreground-2 = ${colors.primary}
+bar-volume-foreground-3 = ${colors.primary}
+bar-volume-foreground-4 = ${colors.primary}
+bar-volume-foreground-5 = ${colors.alert}
+bar-volume-foreground-6 = ${colors.alert}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/volume2]
+type = internal/volume
+
+master-mixer = Headphone
+master-soundcard = hw:1
+
+format-volume = <bar-volume> <label-volume>
+label-volume-foreground = ${root.foreground}
+
+format-volume-prefix = "墳 "
+
+format-muted-prefix = "婢 "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = Sound is muted.
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.primary}
+bar-volume-foreground-1 = ${colors.primary}
+bar-volume-foreground-2 = ${colors.primary}
+bar-volume-foreground-3 = ${colors.primary}
+bar-volume-foreground-4 = ${colors.primary}
+bar-volume-foreground-5 = ${colors.alert}
+bar-volume-foreground-6 = ${colors.alert}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+interval = 0.5
+battery = BAT0
+adapter = ADP1
+full-at = 96
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.alert}
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${colors.primary}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${colors.secondary}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+ramp-capacity-10 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 1000
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 75
+
+format = <ramp> <label>
+format-underline = ${colors.secondary}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+; sink = 
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = false
+
+; Interval for volume increase/decrease (in percent points) (unreleased)
+; Default: 5
+interval = 2
+
+format-volume-prefix = "墳 | "
+format-muted-prefix = "婢 | "
+format-muted-foreground = #666
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
+
+[module/redshift]
+type = custom/script
+interval = 5
+
+exec = ~/.config/polybar/custom/redshift.sh
+
+[module/music]
+type = custom/script
+interval = 2
+
+label = %output:0:45:...%
+exec = ~/.config/polybar/custom/mpris.sh

@@ -1,0 +1,12 @@
+2018/09/07-12:04:31.493 5276 Reusing MANIFEST /home/jazz/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2018/09/07-12:04:31.493 5276 Recovering log #34
+2018/09/07-12:04:31.513 5276 Reusing old log /home/jazz/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000034.log 
+2018/09/07-15:04:46.457 31422 Level-0 table #39: started
+2018/09/07-15:04:46.574 31422 Level-0 table #39: 1460385 bytes OK
+2018/09/07-15:04:46.584 31422 Delete type=0 #34
+2018/09/07-15:06:22.254 31422 Compacting 1@1 + 1@2 files
+2018/09/07-15:06:22.312 31422 Generated table #40@1: 8683 keys, 1169696 bytes
+2018/09/07-15:06:22.312 31422 Compacted 1@1 + 1@2 files => 1169696 bytes
+2018/09/07-15:06:22.318 31422 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/09/07-15:06:22.318 31422 Delete type=2 #39
+2018/09/07-15:06:22.319 31422 Delete type=2 #36

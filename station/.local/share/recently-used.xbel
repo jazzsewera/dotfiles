@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/jazz/Pictures/space.jpg" added="2018-08-15T19:45:30Z" modified="2018-09-07T10:47:12Z" visited="2018-08-15T19:45:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-04T14:46:45Z" count="14"/>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-09-07T10:47:12Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/xdg-utils-1.1.3-3-any.pkg.tar.xz" added="2018-08-20T21:36:59Z" modified="2018-08-20T21:36:59Z" visited="2018-08-20T21:36:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-20T21:36:59Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/RiceDotFiles/RainbowParenthsis.vim" added="2018-08-29T20:11:38Z" modified="2018-08-29T20:17:08Z" visited="2018-08-29T20:11:38Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-29T20:11:38Z" count="2"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-29T20:17:08Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.vim/python.vim" added="2018-08-29T20:17:39Z" modified="2018-08-29T20:17:39Z" visited="2018-08-29T20:17:39Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-29T20:17:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.vimrc" added="2018-08-29T20:18:18Z" modified="2018-08-29T20:18:18Z" visited="2018-08-29T20:18:18Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-29T20:18:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.viminfo" added="2018-08-29T20:18:34Z" modified="2018-08-29T20:18:34Z" visited="2018-08-29T20:18:34Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-29T20:18:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/NoteJazz" added="2018-08-29T21:47:39Z" modified="2018-08-29T21:47:39Z" visited="2018-08-29T21:47:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-08-29T21:47:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/RiceDotFiles/colors.sh" added="2018-08-29T22:14:49Z" modified="2018-08-29T22:14:49Z" visited="2018-08-29T22:14:49Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-29T22:14:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/Screenshots/ss_2018-08-30@00:38:13.png" added="2018-08-29T22:39:52Z" modified="2018-09-01T22:17:06Z" visited="2018-08-29T22:39:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-01T22:17:06Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/Screenshots/ss_2018-08-30@00:46:52.png" added="2018-08-29T22:47:05Z" modified="2018-08-29T22:47:05Z" visited="2018-08-29T22:47:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-29T22:47:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.config/polybar/config" added="2018-08-30T17:49:20Z" modified="2018-09-18T00:52:01Z" visited="2018-08-30T17:49:20Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-09-11T21:32:51Z" count="4"/>
+          <bookmark:application name="Leafpad" exec="&apos;leafpad %u&apos;" modified="2018-09-18T00:52:01Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/Screenshots/ss_2018-08-30@21:38:14.png" added="2018-08-30T19:42:46Z" modified="2018-08-30T19:42:46Z" visited="2018-08-30T19:42:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-30T19:42:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/generalconfig.md" added="2018-08-30T22:16:57Z" modified="2018-08-30T22:16:57Z" visited="2018-08-30T22:16:57Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-30T22:16:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.config/rofi/oxide.rasi" added="2018-08-30T22:17:17Z" modified="2018-08-30T22:17:17Z" visited="2018-08-30T22:17:17Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-30T22:17:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///etc/fonts/fonts.conf" added="2018-08-30T22:49:06Z" modified="2018-08-30T22:49:06Z" visited="2018-08-30T22:49:07Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2018-08-30T22:49:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Grafika/Prace%20graficzne/PORTFOLIO/WATERMARK_white.tif" added="2018-09-01T21:19:09Z" modified="2018-09-01T21:19:09Z" visited="2018-09-01T21:19:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/tiff"/>
+        <bookmark:applications>
+          <bookmark:application name="Atril Document Viewer" exec="&apos;atril %u&apos;" modified="2018-09-01T21:19:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Grafika/Prace%20graficzne/PORTFOLIO/jazz2_logo.png" added="2018-09-01T21:20:18Z" modified="2018-09-01T21:20:18Z" visited="2018-09-01T21:20:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-01T21:20:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/wallpaper.jpg" added="2018-09-01T21:22:18Z" modified="2018-09-01T21:22:18Z" visited="2018-09-01T21:22:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-01T21:22:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.screenlayout/LGTV" added="2018-09-02T23:01:14Z" modified="2018-09-02T23:01:14Z" visited="2018-09-02T23:01:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2018-09-02T23:01:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec" added="2018-09-03T07:59:49Z" modified="2018-09-03T07:59:49Z" visited="2018-09-03T07:59:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-09-03T07:59:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/Aspartus-RootCA.7z" added="2018-09-03T09:26:22Z" modified="2018-09-03T09:26:22Z" visited="2018-09-03T09:26:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-7z-compressed"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird %u&apos;" modified="2018-09-03T09:26:22Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec/tests/Aspartus-RootCA.crt" added="2018-09-03T11:24:02Z" modified="2018-09-04T12:27:44Z" visited="2018-09-03T11:24:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pkix-cert"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-09-03T11:28:06Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-04T12:27:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec_packed/aztec.zip" added="2018-09-03T16:51:00Z" modified="2018-09-07T13:05:15Z" visited="2018-09-03T16:51:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Engrampa" exec="&apos;engrampa&apos;" modified="2018-09-03T16:51:00Z" count="2"/>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-03T17:01:28Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-07T13:05:15Z" count="22"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/Screenshots/ss_2018-09-04@09:54:49.png" added="2018-09-04T08:04:05Z" modified="2018-09-04T08:04:05Z" visited="2018-09-04T08:04:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-04T08:04:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/Screenshots/ss_2018-09-04@14:29:46.png" added="2018-09-04T12:30:06Z" modified="2018-09-04T12:30:06Z" visited="2018-09-04T12:30:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-04T12:30:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/penguin.jpg" added="2018-09-04T13:40:48Z" modified="2018-09-07T10:56:58Z" visited="2018-09-04T13:40:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-07T10:56:58Z" count="15"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_jazz0/aztec%205.zip" added="2018-09-05T09:42:47Z" modified="2018-09-05T09:42:47Z" visited="2018-09-05T09:42:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-05T09:42:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec/tests" added="2018-09-05T10:15:11Z" modified="2018-09-05T10:15:11Z" visited="2018-09-05T10:15:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Engrampa" exec="&apos;engrampa %u&apos;" modified="2018-09-05T10:15:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/aztec%203.zip" added="2018-09-05T10:27:45Z" modified="2018-09-05T10:27:53Z" visited="2018-09-05T10:27:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-05T10:27:46Z" count="2"/>
+          <bookmark:application name="Engrampa" exec="&apos;engrampa&apos;" modified="2018-09-05T10:27:53Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/aztec%204.zip" added="2018-09-05T10:29:13Z" modified="2018-09-05T10:29:26Z" visited="2018-09-05T10:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-05T10:29:13Z" count="2"/>
+          <bookmark:application name="Engrampa" exec="&apos;engrampa&apos;" modified="2018-09-05T10:29:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/jazz/WALKMAN" added="2018-09-06T08:38:51Z" modified="2018-09-06T09:09:42Z" visited="2018-09-06T08:38:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:42Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B1%5D%20Gimme%20All%20Your%20Lovin&apos;%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B4%5D%20Tush%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B3%5D%20Rough%20Boy%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B5%5D%20My%20Head&apos;s%20in%20Mississippi%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B6%5D%20Pearl%20Necklace%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B7%5D%20I&apos;m%20Bad,%20I&apos;m%20Nationwide%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B8%5D%20Viva%20Las%20Vegas%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B9%5D%20Doubleback%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B11%5D%20Got%20Me%20Under%20Pressure%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B12%5D%20Give%20It%20Up%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B10%5D%20Gun%20Love%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B13%5D%20Cheap%20Sunglasses%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B14%5D%20Sleeping%20Bag%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B15%5D%20Planet%20of%20Women%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B16%5D%20La%20Grange%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B17%5D%20Tube%20Snake%20Boogie%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B18%5D%20Legs%20(remix)%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/Greatest%20Hits/%5B2%5D%20Sharp%20Dressed%20Man%20-%20ZZ%20Top.flac" added="2018-09-06T08:40:28Z" modified="2018-09-06T08:40:28Z" visited="2018-09-06T08:40:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/03%20-%20Consumption.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/01%20-%20I%20Gotsta%20Get%20Paid.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/04%20-%20Over%20You.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/02%20-%20Chartreuse.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/05%20-%20Heartache%20In%20Blue.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/10%20-%20Have%20A%20Little%20Mercy.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/08%20-%20It&apos;s%20Too%20Easy%20Ma%C3%B1ana.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/07%20-%20Flyin&apos;%20High.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/06%20-%20I%20Don&apos;t%20Wanna%20Lose,%20Lose,%20You.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/ZZ%20Top/La%20Futura/09%20-%20Big%20Shiny%20Nine.flac" added="2018-09-06T08:40:39Z" modified="2018-09-06T08:40:39Z" visited="2018-09-06T08:40:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/02%20-%20Rock%20&apos;N&apos;%20Roll%20Singer.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/01%20-%20It&apos;s%20A%20Long%20Way%20To%20The%20Top%20(If%20You%20Wanna%20Rock%20&apos;N&apos;%20Roll).flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/04%20-%20Live%20Wire.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/07%20-%20Little%20Lover.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/06%20-%20Can%20I%20Sit%20Next%20To%20You%20Girl.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/05%20-%20T.N.T..flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/08%20-%20She&apos;s%20Got%20Balls.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/09%20-%20High%20Voltage.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/High%20Voltage/03%20-%20The%20Jack.flac" added="2018-09-06T08:40:58Z" modified="2018-09-06T08:40:58Z" visited="2018-09-06T08:40:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:40:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/03%20-%20Moneytalks.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/04%20-%20The%20Razors%20Edge.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/01%20-%20Thunderstruck.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/05%20-%20Mistress%20For%20Christmas.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/02%20-%20Fire%20Your%20Guns.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/09%20-%20Shot%20Of%20Love.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/11%20-%20Goodbye%20And%20Good%20Riddance%20To%20Bad%20Luck.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/08%20-%20Goy%20You%20By%20The%20Balls.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/12%20-%20If%20You%20Dare.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/06%20-%20Rock%20Your%20Heart%20Out.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/10%20-%20Let&apos;s%20Make%20It.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/AC-DC/The%20Razors%20Edge/07%20-%20Are%20You%20Ready.flac" added="2018-09-06T08:41:06Z" modified="2018-09-06T08:41:06Z" visited="2018-09-06T08:41:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T08:41:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/02%20-%20Big%20Love.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/04%20-%20Strike%20Like%20Lightning.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/01%20-%20Addicted%20to%20That%20Rush.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/03%20-%20Take%20a%20Walk.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/05%20-%20Green-Tinted%20Sixties%20Mind.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/06%20-%20Daddy,%20Brother,%20Lover,%20Little%20Boy%20(The%20Electric%20Drill%20Song).flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/07%20-%20Alive%20and%20Kickin&apos;.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/08%20-%20Just%20Take%20My%20Heart.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/12%20-%20Price%20You%20Gotta%20Pay.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/10%20-%20Wild%20World.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/13%20-%20Take%20Cover.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/14%20-%20Dancin&apos;%20With%20My%20Devils.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/17%20-%20Suffocation.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/15%20-%20Superfantastic.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/16%20-%20Shine.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/09%20-%20To%20Be%20With%20You.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/FlacsAndMp3s/Mr.%20Big/Greatest%20Hits/11%20-%20Colorado%20Bulldog.flac" added="2018-09-06T09:09:30Z" modified="2018-09-06T09:09:30Z" visited="2018-09-06T09:09:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/flac"/>
+        <bookmark:applications>
+          <bookmark:application name="winff" exec="&apos;winff %u&apos;" modified="2018-09-06T09:09:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec/tests/Aspartus-RootCA.pem" added="2018-09-06T09:31:11Z" modified="2018-09-06T09:31:11Z" visited="2018-09-06T09:31:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-x509-ca-cert"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2018-09-06T09:31:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Firefox.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Firefox_porno.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Edge_porno.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Edge.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Chrome.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/Docs/Chrome_porno.jpg" added="2018-09-06T10:09:28Z" modified="2018-09-06T10:09:28Z" visited="2018-09-06T10:09:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="skypeforlinux" exec="&apos;skypeforlinux %u&apos;" modified="2018-09-06T10:09:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.screenlayout/SamsungMonitor" added="2018-09-06T14:54:33Z" modified="2018-09-06T14:54:33Z" visited="2018-09-06T14:54:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2018-09-06T14:54:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.screenlayout/LGTV.sh" added="2018-09-06T14:54:40Z" modified="2018-09-06T14:54:52Z" visited="2018-09-06T14:54:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2018-09-06T14:54:52Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/.screenlayout/SamsungMonitor.sh" added="2018-09-06T14:54:48Z" modified="2018-09-06T14:54:57Z" visited="2018-09-06T14:54:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2018-09-06T14:54:57Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec/md/README.md" added="2018-09-07T15:59:58Z" modified="2018-09-07T15:59:58Z" visited="2018-09-07T15:59:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird %u&apos;" modified="2018-09-07T15:59:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Documents/aztec/md/work.md" added="2018-09-07T16:00:04Z" modified="2018-09-07T16:00:04Z" visited="2018-09-07T16:00:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird %u&apos;" modified="2018-09-07T16:00:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_jazz0/przekwaterowania_2017..pdf" added="2018-09-07T16:07:51Z" modified="2018-09-07T16:07:52Z" visited="2018-09-07T16:07:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-07T16:07:51Z" count="1"/>
+          <bookmark:application name="Atril Document Viewer" exec="&apos;atril %u&apos;" modified="2018-09-07T16:07:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/LUSD9Ce.jpg" added="2018-09-12T22:25:18Z" modified="2018-09-12T22:27:40Z" visited="2018-09-12T22:25:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-12T22:27:40Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/sknewformat.jpg" added="2018-09-12T22:33:12Z" modified="2018-09-12T22:36:52Z" visited="2018-09-12T22:33:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-12T22:33:12Z" count="2"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-09-12T22:36:52Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/dankeumeme.jpg" added="2018-09-12T22:45:02Z" modified="2018-09-12T22:52:36Z" visited="2018-09-12T22:45:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-09-12T22:45:38Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-12T22:52:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads/oooh.png" added="2018-09-12T22:57:08Z" modified="2018-09-12T23:00:36Z" visited="2018-09-12T22:57:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-12T23:00:36Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/homeJazz" added="2018-09-13T18:39:43Z" modified="2018-09-13T18:39:43Z" visited="2018-09-13T18:39:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Transmission" exec="&apos;transmission-gtk %u&apos;" modified="2018-09-13T18:39:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_jazz0/ubuntu-mate-18.04.1-desktop-amd64.iso.torrent" added="2018-09-13T18:54:23Z" modified="2018-09-13T18:54:23Z" visited="2018-09-13T18:54:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-13T18:54:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Data/homeJazz/ubuntu-mate-18.04.1-desktop-amd64.iso" added="2018-09-13T18:56:07Z" modified="2018-09-13T18:59:34Z" visited="2018-09-13T18:56:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-cd-image"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-13T18:59:34Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Downloads" added="2018-09-13T18:56:38Z" modified="2018-09-13T18:56:38Z" visited="2018-09-13T18:56:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Transmission" exec="&apos;transmission-gtk %u&apos;" modified="2018-09-13T18:56:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_jazz0/Terminarz-Akcji-Kwaterunkowej-uzupe%C5%82niaj%C4%85ca-2018.pdf" added="2018-09-16T22:09:45Z" modified="2018-09-16T22:09:45Z" visited="2018-09-16T22:09:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Atril Document Viewer" exec="&apos;atril %u&apos;" modified="2018-09-16T22:09:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/IMG_20180916_232228.jpg" added="2018-09-16T23:10:36Z" modified="2018-09-16T23:10:36Z" visited="2018-09-16T23:10:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-16T23:10:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/Pictures/IMG_20180917_011110.jpg" added="2018-09-16T23:14:49Z" modified="2018-09-16T23:14:49Z" visited="2018-09-16T23:14:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-16T23:14:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/notes" added="2018-09-17T23:55:14Z" modified="2018-09-17T23:55:14Z" visited="2018-09-17T23:55:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-09-17T23:55:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jazz/dotfiles" added="2018-09-17T23:55:30Z" modified="2018-09-17T23:55:30Z" visited="2018-09-17T23:55:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-09-17T23:55:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

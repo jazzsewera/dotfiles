@@ -1,0 +1,18 @@
+// SublimeLinter Settings - User
+{
+  "linters": {
+    "gcc": {
+      "include_dirs": [
+        "${project_folder}/include",
+        "/usr/include",
+      ],
+    },
+  },
+  "paths": {
+    "linux": [
+      "/usr/bin/gjslint"
+    ],
+    "osx": [],
+    "windows": []
+  }
+}

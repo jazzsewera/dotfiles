@@ -1,0 +1,31 @@
+
+[audacious]
+record=FALSE
+
+[audgui]
+filebrowser_win=618,319,672,480
+filesel_path=/home/jazz/Music/newelec
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,39,10,275,275,275,10,275
+player_height=1027
+player_width=960
+player_x=960
+player_y=53
+
+[gtkui-layout]
+item_count=0
+
+[skins]
+double_size=TRUE
+equalizer_x=1370
+equalizer_y=262
+mainwin_font=Source Code Pro for Powerline Medium 9
+mainwin_use_bitmapfont=FALSE
+player_x=1370
+player_y=30
+playlist_font=Source Code Pro for Powerline Semi-Bold 8
+playlist_visible=TRUE
+playlist_x=1370
+playlist_y=262
+skin=/usr/share/audacious/Skins/Default

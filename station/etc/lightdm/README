@@ -1,0 +1,4 @@
+# Remember to add group autologin and add your user to it!!!
+groupadd -r autologin
+gpasswd -a jazz autologin
+
