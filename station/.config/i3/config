@@ -14,23 +14,20 @@ set $alt Mod1
 
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
-exec --no-startup-id xrandr --output eDP1 --dpi 140 --mode 1920x1080 --output HDMI1 --off --output DP2-1 --mode 1920x1080 --same-as eDP1 --output DP2-2 --off
+#exec --no-startup-id xrandr --output eDP1 --dpi 140 --mode 1920x1080 --output HDMI1 --off --output DP2-1 --mode 1920x1080 --same-as eDP1 --output DP2-2 --off
 exec --no-startup-id xset s off
 exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id xinput set-prop 11 280 1 &
 exec --no-startup-id redshift
-exec --no-startup-id udiskie &
-exec --no-startup-id polybar main &
 exec_always --no-startup-id setxkbmap pl &
 exec --no-startup-id /home/jazz/.config/i3/startup.sh
-exec --no-startup-id i3-msg 'workspace "2"; exec i3-sensible-terminal -e zsh -c "ncmpcpp"; workspace "1"' 
 bindsym Print exec --no-startup-id scrot '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H:%M:%S.png'
 bindsym $mod+p exec --no-startup-id mpc toggle
 bindsym $mod+m exec --no-startup-id /home/jazz/.config/i3/monitor.sh
-bindsym $mod+comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo -2%
-bindsym $mod+period exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo +2%
+bindsym $mod+comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo -2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo -2%
+bindsym $mod+period exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo +2%; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo +2%
 bindsym $mod+c exec xclip -i /dev/null
 
 
@@ -212,15 +209,10 @@ client.unfocused $bg $bg $ia
 client.focused_inactive $bg $bg $tx
 client.urgent	$rd $rd $tx
 
-bindsym $mod+z exec --no-startup-id "mpc pause; wallschctl lock"
+bindsym $mod+z exec --no-startup-id wallschctl lock
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
-bindsym $mod+XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1 # increase screen brightness
-bindsym $mod+XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1 # decrease screen brightness
-bindsym XF86TouchpadToggle exec --no-startup-id /home/jazz/RiceDotFiles/toggletouchpad.sh # toggle touchpad
 bindsym XF86AudioPlay exec --no-startup-id playerctl play
 bindsym XF86AudioPause exec --no-startup-id playerctl pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
