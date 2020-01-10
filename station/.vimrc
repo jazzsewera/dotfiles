@@ -88,3 +88,6 @@ set splitright
 
 let g:airline_theme='badwolf'
 
+colorscheme 256_noir
+colorscheme base16-atelierlakeside
+colorscheme Atelier_LakesideDark
