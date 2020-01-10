@@ -126,7 +126,7 @@ font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
 font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
 font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
 
-modules-left = i3 cpu temperature temperature-gpu memory filesystem filesystem-data filesystem-data-hdd
+modules-left = i3 cpu temperature temperature-gpu memory filesystem filesystem-data filesystem-data-hdd cloud
 modules-right = pulseaudio xkeyboard date
 
 scroll-up = i3wm-wsnext
@@ -599,6 +599,12 @@ interval = 2
 format-volume-prefix = "墳 | "
 format-muted-prefix = "婢 | "
 format-muted-foreground = #666
+
+[module/cloud]
+type = custom/text
+content = ""
+click-left = /home/jazz/cloud/upload_sync_notify.sh
+click-right = /home/jazz/cloud/download_sync_notify.sh
 
 
 [settings]
