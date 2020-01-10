@@ -7,4 +7,8 @@ xrandr \
 
 wallschd &
 
-lockscreen /home/jazz/Pictures/Wallpapers/multihead/blurred/night/night_wh_cityscape_san_francisco.jpg
+lockscreen /home/jazz/Pictures/Wallpapers/multihead/blurred/night/night_wh_cityscape_san_francisco.jpg &
+
+sleep 1
+/home/jazz/.config/polybar/launch.sh &
+
