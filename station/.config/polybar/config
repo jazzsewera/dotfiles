@@ -36,54 +36,13 @@ secondary-grey = #747474
 alert = #FF410D
 
 
-;======================
+;=========================================
 ;  _                 
 ; | |__  __ _ _ _ ___
 ; | '_ \/ _` | '_(_-<
 ; |_.__/\__,_|_| /__/
 ;                    
-;======================
-
-[bar/main]
-monitor = ${env:MONITOR:DP-1}
-monitor-exact = true
-width = 100%
-height = 30
-radius = 0.0
-fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = ${colors.border}
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=8:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=8:antialias=false;1"
-
-modules-left = i3 cpu temperature memory filesystem
-modules-center = backlight music mpd pulseaudio paswitch
-modules-right = redshift xkeyboard wlan eth battery khal updates date
-
-tray-position = right
-tray-padding = 3
-tray-detached = false
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
-
-;=========================================
+;
 ;            _ _   _ _                _ 
 ;  _ __ _  _| | |_(_) |_  ___ __ _ __| |
 ; | '  \ || | |  _| | ' \/ -_) _` / _` |
@@ -94,7 +53,7 @@ scroll-down = i3wm-wsprev
 
 [bar/center_multihead]
 
-monitor = ${env:MONITOR:DP2-1}
+monitor = ${env:MONITOR:DisplayPort-0}
 monitor-exact = true
 width = 100%
 height = 30
@@ -117,57 +76,12 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=8:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=8:antialias=false;1"
+font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
 font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
 
 modules-left = i3
 modules-center = title
-modules-right = mpd pulseaudio paswitch text-padding date
-
-tray-position = right
-tray-padding = 3
-tray-detached = false
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
-dpi-x = 94
-dpi-y = 94
-
-
-;=================================================================
-
-
-[bar/tall_multihead]
-monitor = ${env:MONITOR:HDMI1}
-monitor-exact = true
-width = 100%
-height = 30
-radius = 0.0
-fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = ${colors.border}
-
-padding-left = 0
-padding-right = 3
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=7:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=7:antialias=false;1"
-font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
-
-modules-left = i3 cpu temperature memory filesystem
 modules-right = mpd pulseaudio text-padding date
 
 tray-position = right
@@ -184,8 +98,8 @@ dpi-y = 94
 ;=================================================================
 
 
-[bar/secondary_multihead]
-monitor = ${env:MONITOR:DP2-2}
+[bar/tall_multihead]
+monitor = ${env:MONITOR:DVI-D-1}
 monitor-exact = true
 width = 100%
 height = 30
@@ -208,17 +122,54 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=7:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=7:antialias=false;1"
+font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
+font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+
+modules-left = i3 cpu temperature temperature-gpu memory filesystem filesystem-data filesystem-data-hdd
+modules-right = pulseaudio xkeyboard date
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+dpi-x = 94
+dpi-y = 94
+
+
+;=================================================================
+
+
+[bar/secondary_multihead]
+monitor = ${env:MONITOR:DVI-D-0}
+monitor-exact = true
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = ${colors.border}
+
+padding-left = 0
+padding-right = 3
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
+font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
 font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
 
 modules-left = i3
-modules-center = music mpd pulseaudio paswitch
-modules-right = redshift xkeyboard wlan eth battery khal updates date
-
-tray-position = right
-tray-padding = 3
-tray-detached = false
+modules-center = music mpd pulseaudio
+modules-right = redshift xkeyboard eth khal updates date
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -321,12 +272,28 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /home/jazz/Data
 
 label-mounted = %{F#267fb5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %{F#267fb5}%mountpoint%%{F-}: not mounted
+label-unmounted = %{F#454545}%mountpoint%%{F-}: x
 label-unmounted-foreground = #444
 
+[module/filesystem-data]
+type = internal/fs
+interval = 25
+
+mount-0 = /home/jazz/Data
+label-mounted = %{F#267fb5}Data%{F-}: %percentage_used%%
+label-unmounted = %{F#454545}Data%{F-}: x
+label-unmounted-foreground = #444
+
+[module/filesystem-data-hdd]
+type = internal/fs
+interval = 25
+
+mount-0 = /home/jazz/Data_hdd
+label-mounted = %{F#267fb5}Data HDD%{F-}: %percentage_used%%
+label-unmounted = %{F#454545}Data HDD%{F-}
+label-unmounted-foreground = #454545
 
 [module/mpd]
 type = internal/mpd
@@ -416,7 +383,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp7s0
+interface = eno1
 interval = 3.0
 
 format-connected = <label-connected>
@@ -575,8 +542,10 @@ animation-charging-framerate = 1000
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
+;thermal-zone = 0
+base-temperature = 23
 warn-temperature = 75
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp1_input
 
 format = <ramp> <label>
 format-underline = ${colors.secondary}
@@ -592,6 +561,25 @@ ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
+[module/temperature-gpu]
+type = internal/temperature
+base-temperature = 23
+warn-temperature = 80
+hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:07:00.0/hwmon/hwmon2/temp1_input
+format = <ramp> <label>
+format-underline = ${colors.alert}
+
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
 
 [module/pulseaudio]
 type = internal/pulseaudio
