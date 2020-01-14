@@ -19,7 +19,7 @@ exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id redshift
 exec_always --no-startup-id setxkbmap pl &
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
-bindsym Print exec --no-startup-id scrot '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
+bindsym Print exec --no-startup-id spectacle
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
 bindsym $mod+p exec --no-startup-id mpc toggle

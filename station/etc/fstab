@@ -12,10 +12,10 @@ UUID=27A9-6CF0      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,cod
 UUID=be97ac36-ec4b-4aee-bd63-1c12beeae087	none      	swap      	defaults  	0 0
 
 # /dev/sdb1
-UUID=aa9fc782-6c03-4a0a-959b-6f54bc4419ca	/home/jazz/Data	ext4	defaults,user	0 0
+UUID=aa9fc782-6c03-4a0a-959b-6f54bc4419ca	/home/jazz/Data	ext4	defaults,user,exec	0 0
 
 # /dev/sda1
-UUID=08e87e0b-b4e0-442b-a42f-251c1ff8e578	/home/jazz/Data_hdd	ext4	noauto,defaults,user	0 0
+UUID=08e87e0b-b4e0-442b-a42f-251c1ff8e578	/home/jazz/Data_hdd	ext4	noauto,defaults,user,exec	0 0
 
 # /dev/sda2
 UUID=40B3F91F1D297D07				/home/jazz/Data_hdd_ntfs	ntfs-3g	noauto,defaults,uid=1000,gid=1000,dmask=022,fmask=133	0 0
