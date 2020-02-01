@@ -5,7 +5,7 @@ Here is how my setup looks:
 
 ![My setup]
 
-[My setup]: screen.png
+[My setup]: screen.jpg
 
 All you need is hopefully in `acer/` or `miniacer/`, and there's a little bit of manuals / tutorials in the `configmanuals/` too!
 
