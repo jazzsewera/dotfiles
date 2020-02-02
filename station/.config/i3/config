@@ -19,10 +19,14 @@ exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id redshift
 exec_always --no-startup-id setxkbmap pl &
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
+exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id mpDris2
 bindsym Print exec --no-startup-id spectacle
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
 bindsym $mod+p exec --no-startup-id mpc toggle
+bindsym $mod+Shift+p exec --no-startup-id dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.Firefox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+m exec --no-startup-id /home/jazz/.config/i3/monitor.sh
 bindsym $mod+n exec --no-startup-id /home/jazz/.config/i3/dualscreen.sh
 bindsym $mod+comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo -2%
