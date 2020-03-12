@@ -29,6 +29,7 @@ bindsym $mod+p exec --no-startup-id mpc toggle
 bindsym $mod+Shift+p exec --no-startup-id dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.Firefox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+m exec --no-startup-id /home/jazz/.config/i3/monitor.sh
 bindsym $mod+n exec --no-startup-id /home/jazz/.config/i3/dualscreen.sh
+bindsym $mod+Shift+n exec --no-startup-id /home/jazz/.config/i3/singlescreen.sh
 bindsym $mod+comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo -2%
 #; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo -2%
 bindsym $mod+period exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo +2%

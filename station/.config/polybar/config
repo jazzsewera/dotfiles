@@ -75,10 +75,11 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+;font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-0 = "Suisse Sign:pixelsize=10:antialias=true:style=Semi Bold;1"
+font-1 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
 modules-center = title
@@ -121,10 +122,11 @@ padding-right = 3
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+;font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-0 = "Suisse Sign:pixelsize=10:antialias=true:style=Semi Bold;1"
+font-1 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3 cpu temperature temperature-gpu memory filesystem filesystem-data filesystem-data-hdd cloud
 modules-right = pulseaudio xkeyboard date
@@ -162,10 +164,11 @@ padding-right = 3
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = "NotoSans Nerd Font:pixelsize=11;1"
-font-1 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-2 = "NotoSans Nerd Font:size=9:antialias=false;1"
-font-3 = "NotoSans Nerd Font:size=16:antialias=true;1"
+;font-0 = "NotoSans Nerd Font:pixelsize=11;1"
+font-0 = "Suisse Sign:pixelsize=10:antialias=true:style=Semi Bold;1"
+font-1 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
+font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
 modules-center = music mpd pulseaudio
@@ -246,7 +249,7 @@ type = internal/xwindow
 format = <label>
 label = %title%
 label-maxlen = 100
-label-empty = jazz-arch
+label-empty = jazz-station
 label-empty-foreground = #444
 
 [module/xkeyboard]

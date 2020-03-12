@@ -1,6 +1,8 @@
 ! INSERT YOUR THEME HERE (themes from github:logico-dev/Xresources-themes)
 #include "/home/jazz/dotfiles/acer/base16-atelier-forest-256.Xresources"
-URxvt.font: xft:SauceCodePro Nerd Font:style=Regular:size=12, xft:DejaVuSansMono Nerd Font:size=9
+URxvt.font: xft:SauceCodePro Nerd Font:style=Regular:size=12, xft:mplus Nerd Font:style=regular:size=9
 URxvt.scrollBar: false
 URxvt.borderless: true
 URxvt.internalBorder: 5
+
+Xcursor.size: 16
