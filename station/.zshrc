@@ -65,6 +65,8 @@
 plugins=(
   git
   colorize
+  gradle-completion
+  ng
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,12 +103,12 @@ source $ZSH/oh-my-zsh.sh
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' format '%F{blue}zshsense%f %F{cyan}%d%f%F{magenta}>%f'
+zstyle ':completion:*' format '%F{blue}zshsense%f %B%F{blue}%d%f%b%F{cyan}>%f'
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
 zstyle ':completion:*' max-errors 2
 zstyle ':completion:*' menu select=8
-zstyle ':completion:*' prompt '%F{blue}zshsense%f %F{cyan}%e%f%F{magenta}>%f'
+zstyle ':completion:*' prompt '%F{blue}zshsense%f %B%F{blue}%e%f%b%F{cyan}>%f'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle :compinstall filename '/home/jazz/.zshrc'
 
@@ -121,14 +123,14 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-PROMPT='%F{magenta}[%f%B%F{green}%n%f@%F{cyan}%m%f %F{blue}%1~%f%b%F{magenta}]%f%(#.#.$) '
-RPROMPT='$(git_prompt_info) %B%F{magenta}[%f%b%B%F{cyan}%T%f%b%B%F{magenta}]%f%b'
+PROMPT='%F{#90a4ae}[%f%F{white}%n%f%F{#90a4ae}@%f%F{white}%m%f %B%F{yellow}%1~%f%b%F{#90a4ae}]%f%F{blue}%(#.#.$)%f '
+RPROMPT='$(git_prompt_info) %F{#90a4ae}[%f%F{#eceff1}%T%f%F{#90a4ae}]%f'
 
 # git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}(:%{$fg_no_bold[blue]%}%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[magenta]%})%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[white]%}(git:%{$fg_bold[blue]%}%B"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_no_bold[white]%})%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}✱"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}*"
 
 # LS colors, made with https://geoff.greer.fm/lscolors/
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
