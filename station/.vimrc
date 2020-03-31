@@ -149,6 +149,9 @@ set mouse=a
 " Search interactively
 set incsearch
 
+" Display ruler at column 78 and a wider one at 120
+let &colorcolumn="78,".join(range(120,121),",")
+
 " Set F10 to focus NerdTree
 map <F10> :NERDTreeFocus <CR>
 
