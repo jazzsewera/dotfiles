@@ -8,12 +8,17 @@
 " <C-y>, - emmet complete
 " <C-space> - autocomplete
 " \o    - Code outline
-" \s    - Enable workspace
+" \s or \w - OpenSession
+" \S or \W - SaveSession
 " cs"'  - Change surrounding " to '
 " cs"<p> - Change surrounding " to <p></p>
 " cst"  - Change surrounding tags to "
 " cs)}  - Change surrounding brackets to curly brackets
 " cs){  - Change surrounding brackets to curly brackets with spaces
+" \-    - resize shorter
+" \=    - resize taller
+" \_    - resize thinner
+" \+    - resize wider
 
 
 set nocompatible              " be iMproved, required
@@ -47,6 +52,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ------- PLUGINS HERE ------
 
+" File browser on the left
+Plugin 'scrooloose/nerdtree'
+
 " Git plugin
 Plugin 'tpope/vim-fugitive'
 
@@ -65,17 +73,17 @@ Plugin 'mattn/vim-lsp-settings'
 
 Plugin 'zchee/deoplete-jedi'
 
-" Workspace plugin
-Plugin 'thaerkh/vim-workspace'
+" Session plugin
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 
 " Status bar on the bottom
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" File browser on the left
-Plugin 'scrooloose/nerdtree'
+" Filetype icons in nerdtree
+Plugin 'ryanoasis/vim-devicons'
 
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " Color schemes
@@ -88,6 +96,12 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 " Automatic commenting
 Plugin 'scrooloose/nerdcommenter'
+
+" Multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
+
+" Tabular - auto align things in code
+Plugin 'godlygeek/tabular'
 
 " Code outline
 Plugin 'majutsushi/tagbar'
@@ -166,6 +180,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" Button remaps for quicker window resizing:
+nnoremap <silent> <leader>= :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <leader>+ :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <leader>_ :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 " Set to open new splits to right and bottom:
 set splitbelow
 set splitright
@@ -254,6 +273,7 @@ let g:deoplete#enable_at_startup = 1
 " Deoplete set shortcuts
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <c-space> <c-n>
+inoremap <expr><C-g> deoplete#undo_completion()
 
 " Vim LSP shortcuts
 nnoremap <C-a> :LspCodeAction<CR>
@@ -263,10 +283,28 @@ nnoremap <leader>df :LspDefinition<CR>
 " Hover info
 nnoremap <C-s> :LspHover<CR>
 
-" Vim workspaces
-nnoremap <leader>s :ToggleWorkspace<CR>
-let g:workspace_session_directory = $HOME . '/cloud/code/vim-sessions/'
-let g:workspace_autosave_untrailspaces = 0
+" Sublime-like multicursor
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<C-m>'
+let g:multi_cursor_select_all_word_key = '<A-m>'
+let g:multi_cursor_start_key           = 'g<C-m>'
+let g:multi_cursor_select_all_key      = 'g<A-m>'
+let g:multi_cursor_next_key            = '<C-m>'
+let g:multi_cursor_prev_key            = '<leader><C-m>'
+let g:multi_cursor_skip_key            = '<leader><C-s>'
+let g:multi_cursor_quit_key            = '<Esc>'
+
+" Vim sessions
+" Don't save hidden and unloaded buffers in sessions.
+set sessionoptions-=buffers
+let g:session_directory = '~/cloud/code/vim-sessions/'
+let g:session_autosave = 'yes'
+let g:session_autosave_periodic = 5
+
+nnoremap <leader>W :SaveSession 
+nnoremap <leader>S :SaveSession 
+nnoremap <leader>w :OpenSession 
+nnoremap <leader>s :OpenSession 
 
 if has("gui_running")
   set guifont=Source\ Code\ Pro\ 12
