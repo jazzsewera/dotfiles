@@ -116,7 +116,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'mattn/emmet-vim'
 
 " Coloresque - preview a color in css
-Plugin 'gko/vim-coloresque'
+Plugin 'jazzsewera/vim-coloresque'
 
 " --- END OF PLUGINS HERE ---
 
@@ -261,7 +261,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
@@ -305,6 +305,17 @@ nnoremap <leader>W :SaveSession
 nnoremap <leader>S :SaveSession 
 nnoremap <leader>w :OpenSession 
 nnoremap <leader>s :OpenSession 
+
+" Git (fugitive)
+nnoremap <leader>gs :Git status<CR>
+nnoremap <leader>ga :Git add --all<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gpl :Git pull<CR>
+nnoremap <leader>gPL :Git pull --all<CR>
+nnoremap <leader>gps :Git push<CR>
+nnoremap <leader>gPS :Git push --all<CR>
+nnoremap <leader>gf :Git fetch --all<CR>
+nnoremap <leader>gS :Git stash save<CR>
 
 if has("gui_running")
   set guifont=Source\ Code\ Pro\ 12

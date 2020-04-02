@@ -127,8 +127,8 @@ PROMPT='%F{#90a4ae}[%f%F{white}%n%f%F{#90a4ae}@%f%F{white}%m%f %B%F{yellow}%1~%f
 RPROMPT='$(git_prompt_info) %F{#90a4ae}[%f%F{#eceff1}%T%f%F{#90a4ae}]%f'
 
 # git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[white]%}(git:%{$fg_bold[blue]%}%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_no_bold[white]%})%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[darkgray]%}(%{$reset_color%}%{$fg_no_bold[white]%}git:%{$fg_bold[blue]%}%B"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_no_bold[darkgray]%})%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}*"
 
