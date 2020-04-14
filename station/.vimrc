@@ -1,15 +1,18 @@
 " Notable shortcuts:
-" <C-a> - LspCodeAction
-" <C-s> - LspHover
+" <C-s> - CocCodeAction
 " \ci   - Invert comment
+" \c<space> - Toggle comment
 " \cc   - Comment
 " \cu   - Uncomment
+" gcc   - Toggle comment
+" Vgc   - Toggle comment in visual mode
 " <C-n> - toggle NERDTree
-" <C-y>, - emmet complete
-" <C-space> - autocomplete
+" <C-n> - next autocomplete
+" <C-p> - previous autocomplete
 " \o    - Code outline
 " \s or \w - OpenSession
 " \S or \W - SaveSession
+" csw'  - Wrap current word in ''
 " cs"'  - Change surrounding " to '
 " cs"<p> - Change surrounding " to <p></p>
 " cst"  - Change surrounding tags to "
@@ -19,6 +22,10 @@
 " \=    - resize taller
 " \_    - resize thinner
 " \+    - resize wider
+" \s    - normal mode spelling fixes
+" \S    - normal mode thesaurus (Synonyms)
+" <C-X><C-S> - insert mode spelling
+" <C-X><C-T> - insert mode thesaurus
 
 
 set nocompatible              " be iMproved, required
@@ -52,6 +59,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ------- PLUGINS HERE ------
 
+" Defaults everyone can agree on
+Plugin 'tpope/vim-sensible'
+
 " File browser on the left
 Plugin 'scrooloose/nerdtree'
 
@@ -61,17 +71,35 @@ Plugin 'tpope/vim-fugitive'
 " Git gutter
 Plugin 'airblade/vim-gitgutter'
 
+" Additional shortcuts
+Plugin 'tpope/vim-unimpaired'
+
+" HTML / XML tag closing
+Plugin 'tpope/vim-ragtag'
+
+" Display indentation guides
+Plugin 'yggdroot/indentline'
+
 " Syntax features!!!
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 
 " Autocomplete
-Plugin 'shougo/deoplete.nvim'
-Plugin 'prabirshrestha/vim-lsp'
-Plugin 'prabirshrestha/async.vim'
-Plugin 'lighttiger2505/deoplete-vim-lsp'
-Plugin 'mattn/vim-lsp-settings'
+" Plugin 'shougo/deoplete.nvim'
+" Plugin 'prabirshrestha/vim-lsp'
+" Plugin 'prabirshrestha/async.vim'
+" Plugin 'lighttiger2505/deoplete-vim-lsp'
+" Plugin 'mattn/vim-lsp-settings'
+"
+" Plugin 'zchee/deoplete-jedi'
+Plugin 'neoclide/coc.nvim'  " you need to run ./install.sh from coc.nvim dir
+Plugin 'othree/html5.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 
-Plugin 'zchee/deoplete-jedi'
+" Spelling and thesaurus
+Plugin 'reedes/vim-lexical'
+
+Plugin 'tweekmonster/django-plus.vim'
 
 " Session plugin
 Plugin 'xolox/vim-misc'
@@ -84,11 +112,10 @@ Plugin 'vim-airline/vim-airline-themes'
 " Filetype icons in nerdtree
 Plugin 'ryanoasis/vim-devicons'
 
+" Vim markdown
 Plugin 'plasticboy/vim-markdown'
 
 " Color schemes
-Plugin 'nlknguyen/papercolor-theme'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'mhartington/oceanic-next'
 
 " Fuzzy finder
@@ -109,14 +136,17 @@ Plugin 'majutsushi/tagbar'
 " Automatic brackets, quotes, tags, etc. editing
 Plugin 'tpope/vim-surround'
 
+" Vim abolish - for quick and advanced string substitution
+Plugin 'tpope/vim-abolish'
+
 " Extended repetition of previous commands
 Plugin 'tpope/vim-repeat'
 
 " Emmet - expanding abbreviations for HTML
-Plugin 'mattn/emmet-vim'
+" Plugin 'mattn/emmet-vim'
 
 " Coloresque - preview a color in css
-Plugin 'jazzsewera/vim-coloresque'
+Plugin 'gko/vim-coloresque'
 
 " --- END OF PLUGINS HERE ---
 
@@ -143,7 +173,13 @@ set number relativenumber
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#wordcount#enabled = 1
+let g:airline#extensions#wordcount#filetypes =
+  \ ['asciidoc', 'help', 'mail', 'markdown', 'org', 'plaintex', 'rst', 'tex', 'text', 'pandoc']
 let g:vim_markdown_folding_disabled = 1
+
+" Markdown editing
+let g:markdown_syntax_conceal = 0
 
 " Colorize syntax
 syntax on
@@ -225,6 +261,14 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Vim exit when the only window left is Nerd tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" If more than one window and previous buffer was NERDTree, go back to it.
+autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+
+let g:NERDTreeWinPos = "left"
+let g:NERDTreeWinSize = 30
+let g:NERDTreeWinSizeMax = 30
+let g:NERDTreeMinimalUI = 1
+
 " Nerdcommenter
 " Usage
 " - \cc - comment
@@ -247,6 +291,9 @@ let g:NERDToggleCheckAllLines = 1
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
+nmap gcc <leader>c<space>
+vmap gc <leader>c<space>
+
 " Tagbar - code outline
 " Usage
 " - \o - open code outline
@@ -256,32 +303,79 @@ let g:NERDSpaceDelims = 1
 nmap <leader>o :TagbarToggle<CR>
 
 " Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+"
+" let g:syntastic_java_javac_classpath = '/home/jazz/java/javafx-sdk-11.0.2/lib/*:/home/jazz/java/gson/gson-2.8.6.jar:/home/jazz/java/guava/guava-28.1-jre.jar'
+" let g:syntastic_java_javac_options = '--sourcepath=src/main/java/'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" Coc code completion, litning and actions
+nmap <leader>E <Plug>(coc-diagnostic-prev-error)
+nmap <leader>e <Plug>(coc-diagnostic-next-error)
+nmap <leader>d <Plug>(coc-definition)
+nmap <leader>D <Plug>(coc-declaration)
+nmap <leader>i <Plug>(coc-implementation)
+nmap <leader>t <Plug>(coc-type-definition)
+nmap <leader>r <Plug>(coc-references)
+nmap <leader>a <Plug>(coc-diagnostic-next)
+nmap <leader>A <Plug>(coc-diagnostic-prev)
+nmap <leader>R <Plug>(coc-refactor)
+nmap <leader>F <Plug>(coc-fix-current)
+nmap <leader>f <Plug>(coc-float-jump)
+nmap <leader>H <Plug>(coc-float-hide)
+nmap <leader>l :CocList<CR>
+nmap <C-s> <Plug>(coc-codeaction)
 
-let g:syntastic_java_javac_classpath = '/home/jazz/java/javafx-sdk-11.0.2/lib/*:/home/jazz/java/gson/gson-2.8.6.jar:/home/jazz/java/guava/guava-28.1-jre.jar'
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 
-" Deoplete run at startup
-let g:deoplete#enable_at_startup = 1
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
-" Deoplete set shortcuts
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <c-space> <c-n>
-inoremap <expr><C-g> deoplete#undo_completion()
+let g:coc_snippet_next = '<tab>'
 
-" Vim LSP shortcuts
-nnoremap <C-a> :LspCodeAction<CR>
-nnoremap <leader>dp :LspPeekDefinition<CR>
-" Jump to definition
-nnoremap <leader>df :LspDefinition<CR>
-" Hover info
-nnoremap <C-s> :LspHover<CR>
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+set signcolumn=yes
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " Sublime-like multicursor
 let g:multi_cursor_use_default_mapping=0
@@ -296,15 +390,12 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 " Vim sessions
 " Don't save hidden and unloaded buffers in sessions.
-set sessionoptions-=buffers
 let g:session_directory = '~/cloud/code/vim-sessions/'
 let g:session_autosave = 'yes'
 let g:session_autosave_periodic = 5
 
 nnoremap <leader>W :SaveSession 
-nnoremap <leader>S :SaveSession 
 nnoremap <leader>w :OpenSession 
-nnoremap <leader>s :OpenSession 
 
 " Git (fugitive)
 nnoremap <leader>gs :Git status<CR>
@@ -316,6 +407,95 @@ nnoremap <leader>gps :Git push<CR>
 nnoremap <leader>gPS :Git push --all<CR>
 nnoremap <leader>gf :Git fetch --all<CR>
 nnoremap <leader>gS :Git stash save<CR>
+
+" Lexical
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd,pandoc call lexical#init()
+  autocmd FileType textile call lexical#init()
+  autocmd FileType text call lexical#init({ 'spell': 0 })
+augroup END
+
+let g:lexical#spelllang = ['pl', 'en_US', 'en_GB']
+let g:lexical#thesaurus = ['~/cloud/priv/dict/en-US-thesaurus.txt', '~/cloud/priv/dict/pl-PL-thesaurus.txt']
+let g:lexical#dictionary = ['~/cloud/priv/dict/en-US-dict.txt', '~/cloud/priv/dict/pl-PL-dict.txt']
+let g:lexical#spell_key = '<leader>s'
+let g:lexical#thesaurus_key = '<leader>S'
+
+" Vim markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_no_default_key_mappings = 1
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_conceal = 0
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+let g:vim_markdown_conceal_code_blocks = 0
+let g:vim_markdown_math = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_new_list_item_indent = 2
+" let g:vim_markdown_auto_insert_bullets = 0
+" let g:vim_markdown_new_list_item_indent = 0
+nmap ]] <Plug>Markdown_MoveToNextHeader
+nmap [[ <Plug>Markdown_MoveToPreviousHeader
+nmap ]u <Plug>Markdown_MoveToParentHeader
+
+autocmd FileType markdown,mkd,pandoc set tw=78
+autocmd FileType markdown,mkd,pandoc set fo+=t
+
+nmap <leader>b :call AutoWrapToggle()<CR>
+function! AutoWrapToggle()
+  if &formatoptions =~ 't'
+    set fo-=t
+  else
+    set fo+=t
+  endif
+endfunction
+
+" Indent lines
+let g:indentLine_char = '▏'
+
+
+" Indent Python in the Google way.
+augroup google_python_indent
+  autocmd FileType python,py setlocal indentexpr=GetGooglePythonIndent(v:lnum)
+  autocmd FileType python,py let s:maxoff = 50 " maximum number of lines to look backwards.
+augroup END
+
+
+function GetGooglePythonIndent(lnum)
+
+  " Indent inside parens.
+  " Align with the open paren unless it is at the end of the line.
+  " E.g.
+  "   open_paren_not_at_EOL(100,
+  "                         (200,
+  "                          300),
+  "                         400)
+  "   open_paren_at_EOL(
+  "       100, 200, 300, 400)
+  call cursor(a:lnum, 1)
+  let [par_line, par_col] = searchpairpos('(\|{\|\[', '', ')\|}\|\]', 'bW',
+        \ "line('.') < " . (a:lnum - s:maxoff) . " ? dummy :"
+        \ . " synIDattr(synID(line('.'), col('.'), 1), 'name')"
+        \ . " =~ '\\(Comment\\|String\\)$'")
+  if par_line > 0
+    call cursor(par_line, 1)
+    if par_col != col("$") - 1
+      return par_col
+    endif
+  endif
+
+  " Delegate the rest to the original function.
+  return GetPythonIndent(a:lnum)
+
+endfunction
+
+let pyindent_nested_paren="&sw*2"
+let pyindent_open_paren="&sw*2"
+
+" Disable concealing
+set cole=0
+let g:vim_json_syntax_conceal = 0
 
 if has("gui_running")
   set guifont=Source\ Code\ Pro\ 12

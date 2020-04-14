@@ -1,0 +1,4 @@
+{
+  "codeLens.enable": true,
+  "emmet.includeLanguages": {"htmldjango": "html"}
+}
