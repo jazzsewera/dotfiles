@@ -96,6 +96,9 @@ Plugin 'othree/html5.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'HerringtonDarkholme/yats.vim'
 
+" Snippets
+Plugin 'honza/vim-snippets'
+
 " Spelling and thesaurus
 Plugin 'reedes/vim-lexical'
 
@@ -114,6 +117,10 @@ Plugin 'ryanoasis/vim-devicons'
 
 " Vim markdown
 Plugin 'plasticboy/vim-markdown'
+
+" Vim LaTeX
+" :CocInstall coc-vimtex
+Plugin 'lervag/vimtex'
 
 " Color schemes
 Plugin 'mhartington/oceanic-next'
@@ -379,13 +386,13 @@ endfunction
 
 " Sublime-like multicursor
 let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_start_word_key      = '<C-m>'
-let g:multi_cursor_select_all_word_key = '<A-m>'
-let g:multi_cursor_start_key           = 'g<C-m>'
-let g:multi_cursor_select_all_key      = 'g<A-m>'
-let g:multi_cursor_next_key            = '<C-m>'
-let g:multi_cursor_prev_key            = '<leader><C-m>'
-let g:multi_cursor_skip_key            = '<leader><C-s>'
+let g:multi_cursor_start_word_key      = '<leader>m'
+let g:multi_cursor_select_all_word_key = '<leader>M'
+let g:multi_cursor_start_key           = '<leader>k'
+let g:multi_cursor_select_all_key      = '<leader>K'
+let g:multi_cursor_next_key            = '<C-n>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-s>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 " Vim sessions
@@ -411,12 +418,12 @@ nnoremap <leader>gS :Git stash save<CR>
 " Lexical
 augroup lexical
   autocmd!
-  autocmd FileType markdown,mkd,pandoc call lexical#init()
+  autocmd FileType markdown,mkd,pandoc,plaintex,tex,latex call lexical#init()
   autocmd FileType textile call lexical#init()
   autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
 
-let g:lexical#spelllang = ['pl', 'en_US', 'en_GB']
+let g:lexical#spelllang = ['pl', 'en_US']
 let g:lexical#thesaurus = ['~/cloud/priv/dict/en-US-thesaurus.txt', '~/cloud/priv/dict/pl-PL-thesaurus.txt']
 let g:lexical#dictionary = ['~/cloud/priv/dict/en-US-dict.txt', '~/cloud/priv/dict/pl-PL-dict.txt']
 let g:lexical#spell_key = '<leader>s'
@@ -496,6 +503,13 @@ let pyindent_open_paren="&sw*2"
 " Disable concealing
 set cole=0
 let g:vim_json_syntax_conceal = 0
+
+" Map Ctrl+Backspace to remove previous word in insert mode
+inoremap <C-BS> <C-w>
+inoremap <C-h> <C-w>
+
+" Map cse to vimtex-env-change
+nmap cse <plug>(vimtex-env-change)
 
 if has("gui_running")
   set guifont=Source\ Code\ Pro\ 12

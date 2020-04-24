@@ -67,6 +67,10 @@ plugins=(
   colorize
   gradle-completion
   ng
+  colored-man-pages
+  cp
+  history-substring-search
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -148,3 +152,18 @@ function cless {
 	ccat $1 | less
 }
 
+# Syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+HISTORY_SUBSTRING_SEARCH_FUZZY=1
+
+# History substring search
+bindkey '^P' history-beginning-search-up
+bindkey '^N' history-beginning-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Tmux plugin configuration
+ZSH_TMUX_FIXTERM=true
+ZSH_TMUX_UNICODE=true
