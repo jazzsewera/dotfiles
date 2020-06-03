@@ -96,6 +96,9 @@ Plugin 'othree/html5.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'HerringtonDarkholme/yats.vim'
 
+" Debugging
+Plugin 'sakhnik/nvim-gdb'
+
 " Snippets
 Plugin 'honza/vim-snippets'
 
@@ -323,15 +326,15 @@ nmap <leader>o :TagbarToggle<CR>
 " let g:syntastic_java_javac_options = '--sourcepath=src/main/java/'
 
 " Coc code completion, litning and actions
-nmap <leader>E <Plug>(coc-diagnostic-prev-error)
-nmap <leader>e <Plug>(coc-diagnostic-next-error)
-nmap <leader>d <Plug>(coc-definition)
-nmap <leader>D <Plug>(coc-declaration)
-nmap <leader>i <Plug>(coc-implementation)
-nmap <leader>t <Plug>(coc-type-definition)
-nmap <leader>r <Plug>(coc-references)
-nmap <leader>a <Plug>(coc-diagnostic-next)
-nmap <leader>A <Plug>(coc-diagnostic-prev)
+nmap <leader>gpe <Plug>(coc-diagnostic-prev-error)
+nmap <leader>gne <Plug>(coc-diagnostic-next-error)
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gD <Plug>(coc-declaration)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gt <Plug>(coc-type-definition)
+nmap <leader>gr <Plug>(coc-references)
+nmap <leader>ga <Plug>(coc-diagnostic-next)
+nmap <leader>gA <Plug>(coc-diagnostic-prev)
 nmap <leader>R <Plug>(coc-refactor)
 nmap <leader>F <Plug>(coc-fix-current)
 nmap <leader>f <Plug>(coc-float-jump)
@@ -405,15 +408,15 @@ nnoremap <leader>W :SaveSession
 nnoremap <leader>w :OpenSession 
 
 " Git (fugitive)
-nnoremap <leader>gs :Git status<CR>
-nnoremap <leader>ga :Git add --all<CR>
-nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gpl :Git pull<CR>
-nnoremap <leader>gPL :Git pull --all<CR>
-nnoremap <leader>gps :Git push<CR>
-nnoremap <leader>gPS :Git push --all<CR>
-nnoremap <leader>gf :Git fetch --all<CR>
-nnoremap <leader>gS :Git stash save<CR>
+nnoremap <leader>Gs :Git status<CR>
+nnoremap <leader>Ga :Git add --all<CR>
+nnoremap <leader>Gc :Git commit<CR>
+nnoremap <leader>Gpl :Git pull<CR>
+nnoremap <leader>GPL :Git pull --all<CR>
+nnoremap <leader>Gps :Git push<CR>
+nnoremap <leader>GPS :Git push --all<CR>
+nnoremap <leader>Gf :Git fetch --all<CR>
+nnoremap <leader>GS :Git stash save<CR>
 
 " Lexical
 augroup lexical
