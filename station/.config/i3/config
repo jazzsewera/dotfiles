@@ -23,8 +23,8 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id mpDris2
 bindsym Print exec --no-startup-id spectacle
-bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
-bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png'
+bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y%m%d_%H%M%S.png'
+bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y%m%d_%H%M%S.png'
 bindsym $mod+p exec --no-startup-id mpc toggle
 bindsym $mod+Shift+p exec --no-startup-id dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.Firefox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+m exec --no-startup-id /home/jazz/.config/i3/monitor.sh
