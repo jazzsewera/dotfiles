@@ -124,3 +124,5 @@ Config as for 2020-06-03
 
 `\o` -- show outline (tags)  
 `<C-N>` -- toggle Nerd Tree
+
+<!-- to render: `pandoc -f markdown_mmd+smart -V lang=en-US -V geometry:margin=1.5cm -V classoption:twocolumn -o vim-cheatsheet.pdf vim-cheatsheet.md` -->
