@@ -333,8 +333,8 @@ nmap <leader>gD <Plug>(coc-declaration)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gt <Plug>(coc-type-definition)
 nmap <leader>gr <Plug>(coc-references)
-nmap <leader>ga <Plug>(coc-diagnostic-next)
-nmap <leader>gA <Plug>(coc-diagnostic-prev)
+nmap <leader>gnd <Plug>(coc-diagnostic-next)
+nmap <leader>gpd <Plug>(coc-diagnostic-prev)
 nmap <leader>R <Plug>(coc-refactor)
 nmap <leader>F <Plug>(coc-fix-current)
 nmap <leader>f <Plug>(coc-float-jump)
@@ -415,7 +415,8 @@ nnoremap <leader>Gpl :Git pull<CR>
 nnoremap <leader>GPL :Git pull --all<CR>
 nnoremap <leader>Gps :Git push<CR>
 nnoremap <leader>GPS :Git push --all<CR>
-nnoremap <leader>Gf :Git fetch --all<CR>
+nnoremap <leader>Gf :Git fetch<CR>
+nnoremap <leader>GF :Git fetch --all<CR>
 nnoremap <leader>GS :Git stash save<CR>
 
 " Lexical
