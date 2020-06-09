@@ -111,6 +111,9 @@ Plugin 'tweekmonster/django-plus.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 
+" Start screen
+Plugin 'mhinz/vim-startify'
+
 " Status bar on the bottom
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -129,7 +132,8 @@ Plugin 'lervag/vimtex'
 Plugin 'mhartington/oceanic-next'
 
 " Fuzzy finder
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " Automatic commenting
 Plugin 'scrooloose/nerdcommenter'
@@ -261,8 +265,8 @@ map <C-n> :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 
 " Nerd tree autolaunch when vim starts with no files
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Nerd tree autolaunch when opening a directory
 autocmd StdinReadPre * let s:std_in=1
@@ -328,13 +332,15 @@ nmap <leader>o :TagbarToggle<CR>
 " Coc code completion, litning and actions
 nmap <leader>gpe <Plug>(coc-diagnostic-prev-error)
 nmap <leader>gne <Plug>(coc-diagnostic-next-error)
+nmap <leader>gpw <Plug>(coc-diagnostic-prev)
+nmap <leader>gnw <Plug>(coc-diagnostic-next)
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gD <Plug>(coc-declaration)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gt <Plug>(coc-type-definition)
 nmap <leader>gr <Plug>(coc-references)
-nmap <leader>gnd <Plug>(coc-diagnostic-next)
 nmap <leader>gpd <Plug>(coc-diagnostic-prev)
+nmap <leader>gnd <Plug>(coc-diagnostic-next)
 nmap <leader>R <Plug>(coc-refactor)
 nmap <leader>F <Plug>(coc-fix-current)
 nmap <leader>f <Plug>(coc-float-jump)
@@ -367,7 +373,7 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=200
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
@@ -386,6 +392,9 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Fzf ctrl-p binding
+nnoremap <C-p> :Files<CR>
 
 " Sublime-like multicursor
 let g:multi_cursor_use_default_mapping=0
@@ -418,6 +427,10 @@ nnoremap <leader>GPS :Git push --all<CR>
 nnoremap <leader>Gf :Git fetch<CR>
 nnoremap <leader>GF :Git fetch --all<CR>
 nnoremap <leader>GS :Git stash save<CR>
+" Fzf git files search
+nnoremap <leader>Gls :GFiles<CR>
+nnoremap <leader>GLs :GFiles<CR>
+nnoremap <leader>GLS :GFiles<CR>
 
 " Lexical
 augroup lexical

@@ -229,6 +229,8 @@ bindsym XF86AudioNext exec --no-startup-id "playerctl next; mpc next"
 bindsym XF86AudioPrev exec --no-startup-id "playerctl previous; mpc prev"
 bindsym XF86AudioStop exec --no-startup-id "playerctl stop; mpc stop"
 
+for_window [title="Microsoft Teams Notification"] floating enable
+
 # bind workspaces to different monitors
 
 set $monitor_tall DVI-D-1
