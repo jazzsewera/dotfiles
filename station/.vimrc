@@ -412,6 +412,7 @@ let g:multi_cursor_quit_key            = '<Esc>'
 let g:session_directory = '~/cloud/code/vim-sessions/'
 let g:session_autosave = 'yes'
 let g:session_autosave_periodic = 5
+let g:session_autoload = 'no'
 
 nnoremap <leader>W :SaveSession 
 nnoremap <leader>w :OpenSession 
@@ -431,6 +432,7 @@ nnoremap <leader>GS :Git stash save<CR>
 nnoremap <leader>Gls :GFiles<CR>
 nnoremap <leader>GLs :GFiles<CR>
 nnoremap <leader>GLS :GFiles<CR>
+nnoremap <leader><C-P> :GFiles<CR>
 
 " Lexical
 augroup lexical
