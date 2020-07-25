@@ -1,3 +1,9 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Notable shortcuts:
 " <C-s> - CocCodeAction
 " \ci   - Invert comment
@@ -27,157 +33,127 @@
 " <C-X><C-S> - insert mode spelling
 " <C-X><C-T> - insert mode thesaurus
 
+set nocompatible
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+call plug#begin('~/.vim/plugged')
 
 " ------- PLUGINS HERE ------
 
 " Defaults everyone can agree on
-Plugin 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
+
+" Syntax for most languages
+Plug 'sheerun/vim-polyglot'
 
 " File browser on the left
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " Git plugin
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Git gutter
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 " Additional shortcuts
-Plugin 'tpope/vim-unimpaired'
+Plug 'tpope/vim-unimpaired'
 
 " HTML / XML tag closing
-Plugin 'tpope/vim-ragtag'
+Plug 'tpope/vim-ragtag'
 
 " Display indentation guides
-Plugin 'yggdroot/indentline'
+Plug 'yggdroot/indentline'
 
-" Syntax features!!!
-" Plugin 'scrooloose/syntastic'
+" LSP syntax, linting, autocomplete
+let coc_plugins = [
+      \ 'coc-vimtex',
+      \ 'coc-java', 
+      \ 'coc-emmet', 
+      \ 'coc-prettier', 
+      \ 'coc-tsserver',
+      \ 'coc-python']
+let coc_install = ':CocInstall ' . join(coc_plugins)
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': coc_install}
 
-" Autocomplete
-" Plugin 'shougo/deoplete.nvim'
-" Plugin 'prabirshrestha/vim-lsp'
-" Plugin 'prabirshrestha/async.vim'
-" Plugin 'lighttiger2505/deoplete-vim-lsp'
-" Plugin 'mattn/vim-lsp-settings'
-"
-" Plugin 'zchee/deoplete-jedi'
-Plugin 'neoclide/coc.nvim'  " you need to run ./install.sh from coc.nvim dir
-Plugin 'othree/html5.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'HerringtonDarkholme/yats.vim'
+" PEP8 Python indent
+Plug 'Vimjas/vim-python-pep8-indent'
+
+" Auto pair parentheses
+Plug 'jiangmiao/auto-pairs'
+
+" Auto indent after enter
+Plug 'andersoncustodio/vim-enter-indent'
 
 " Debugging
-Plugin 'sakhnik/nvim-gdb'
+Plug 'sakhnik/nvim-gdb'
 
 " Snippets
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 " Spelling and thesaurus
-Plugin 'reedes/vim-lexical'
-
-Plugin 'tweekmonster/django-plus.vim'
+Plug 'reedes/vim-lexical'
 
 " Session plugin
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 
 " Start screen
-Plugin 'mhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 
 " Status bar on the bottom
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Filetype icons in nerdtree
-Plugin 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " Vim markdown
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 " Vim LaTeX
 " :CocInstall coc-vimtex
-Plugin 'lervag/vimtex'
+Plug 'lervag/vimtex'
 
 " Color schemes
-Plugin 'mhartington/oceanic-next'
+Plug 'mhartington/oceanic-next'
+
+" Rainbow parentheses
+Plug 'kien/rainbow_parentheses.vim'
 
 " Fuzzy finder
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim'
 
 " Automatic commenting
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " Multiple cursors
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
 " Tabular - auto align things in code
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 " Code outline
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
 " Automatic brackets, quotes, tags, etc. editing
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Vim abolish - for quick and advanced string substitution
-Plugin 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'
 
 " Extended repetition of previous commands
-Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'
 
 " Emmet - expanding abbreviations for HTML
-" Plugin 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
 " Coloresque - preview a color in css
-Plugin 'gko/vim-coloresque'
+Plug 'gko/vim-coloresque'
 
 " --- END OF PLUGINS HERE ---
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#end()
 
 
 " Display hybrid numbers in the gutter
@@ -480,41 +456,12 @@ endfunction
 " Indent lines
 let g:indentLine_char = '▏'
 
-
-" Indent Python in the Google way.
-augroup google_python_indent
-  autocmd FileType python,py setlocal indentexpr=GetGooglePythonIndent(v:lnum)
-  autocmd FileType python,py let s:maxoff = 50 " maximum number of lines to look backwards.
-augroup END
-
-
-function GetGooglePythonIndent(lnum)
-
-  " Indent inside parens.
-  " Align with the open paren unless it is at the end of the line.
-  " E.g.
-  "   open_paren_not_at_EOL(100,
-  "                         (200,
-  "                          300),
-  "                         400)
-  "   open_paren_at_EOL(
-  "       100, 200, 300, 400)
-  call cursor(a:lnum, 1)
-  let [par_line, par_col] = searchpairpos('(\|{\|\[', '', ')\|}\|\]', 'bW',
-        \ "line('.') < " . (a:lnum - s:maxoff) . " ? dummy :"
-        \ . " synIDattr(synID(line('.'), col('.'), 1), 'name')"
-        \ . " =~ '\\(Comment\\|String\\)$'")
-  if par_line > 0
-    call cursor(par_line, 1)
-    if par_col != col("$") - 1
-      return par_col
-    endif
-  endif
-
-  " Delegate the rest to the original function.
-  return GetPythonIndent(a:lnum)
-
-endfunction
+" Java syntax highlighting
+let java_highlight_functions = 1
+let java_highlight_all = 1
+highlight link javaScopeDecl Statement
+highlight link javaType Type
+highlight link javaDocTags PreProc
 
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
