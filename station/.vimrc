@@ -4,35 +4,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" Notable shortcuts:
-" <C-s> - CocCodeAction
-" \ci   - Invert comment
-" \c<space> - Toggle comment
-" \cc   - Comment
-" \cu   - Uncomment
-" gcc   - Toggle comment
-" Vgc   - Toggle comment in visual mode
-" <C-n> - toggle NERDTree
-" <C-n> - next autocomplete
-" <C-p> - previous autocomplete
-" \o    - Code outline
-" \s or \w - OpenSession
-" \S or \W - SaveSession
-" csw'  - Wrap current word in ''
-" cs"'  - Change surrounding " to '
-" cs"<p> - Change surrounding " to <p></p>
-" cst"  - Change surrounding tags to "
-" cs)}  - Change surrounding brackets to curly brackets
-" cs){  - Change surrounding brackets to curly brackets with spaces
-" \-    - resize shorter
-" \=    - resize taller
-" \_    - resize thinner
-" \+    - resize wider
-" \s    - normal mode spelling fixes
-" \S    - normal mode thesaurus (Synonyms)
-" <C-X><C-S> - insert mode spelling
-" <C-X><C-T> - insert mode thesaurus
-
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
@@ -146,6 +117,9 @@ Plug 'tpope/vim-repeat'
 
 " Emmet - expanding abbreviations for HTML
 Plug 'mattn/emmet-vim'
+
+" Editorconfig plugin
+Plug 'editorconfig/editorconfig-vim'
 
 " Coloresque - preview a color in css
 Plug 'gko/vim-coloresque'
@@ -473,6 +447,25 @@ let g:vim_json_syntax_conceal = 0
 " Map Ctrl+Backspace to remove previous word in insert mode
 inoremap <C-BS> <C-w>
 inoremap <C-h> <C-w>
+
+" Set colors for rainbow parentheses
+let g:rbpt_colorpairs = [
+      \ ['lightblue'  , 'LightSkyBlue'    ],
+      \ ['cyan'       , 'DeepSkyBlue'     ],
+      \ ['darkcyan'   , 'Aqua'            ],
+      \ ['blue'       , 'Turquoise'       ],
+      \ ['green'      , 'MediumSeaGreen'  ],
+      \ ['lightgreen' , 'LightGreen'      ],
+      \ ['lightgray'  , 'YellowGreen'     ],
+      \ ['yellow'     , 'LightYellow'     ],
+      \ ['red'        , 'Pink'            ],
+      \ ['magenta'    , 'HotPink'         ],
+      \ ['gray'       , 'MediumSlateBlue' ],
+      \ ]
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " Map cse to vimtex-env-change
 nmap cse <plug>(vimtex-env-change)
