@@ -101,7 +101,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+| split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -230,6 +230,7 @@ bindsym XF86AudioPrev exec --no-startup-id "playerctl previous; mpc prev"
 bindsym XF86AudioStop exec --no-startup-id "playerctl stop; mpc stop"
 
 for_window [title="Microsoft Teams Notification"] floating enable
+for_window [title="Lunar Lander"] floating enable
 
 # bind workspaces to different monitors
 
