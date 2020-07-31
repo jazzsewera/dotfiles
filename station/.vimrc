@@ -41,6 +41,10 @@ let coc_plugins = [
       \ 'coc-emmet', 
       \ 'coc-prettier', 
       \ 'coc-tsserver',
+      \ 'coc-eslint',
+      \ 'coc-react-refactor',
+      \ 'coc-styled-components',
+      \ 'coc-angular',
       \ 'coc-python']
 let coc_install = ':CocInstall ' . join(coc_plugins)
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': coc_install}
@@ -392,7 +396,7 @@ augroup lexical
   autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
 
-let g:lexical#spelllang = ['pl', 'en_US']
+let g:lexical#spelllang = ['pl', 'en_us']
 let g:lexical#thesaurus = ['~/cloud/priv/dict/en-US-thesaurus.txt', '~/cloud/priv/dict/pl-PL-thesaurus.txt']
 let g:lexical#dictionary = ['~/cloud/priv/dict/en-US-dict.txt', '~/cloud/priv/dict/pl-PL-dict.txt']
 let g:lexical#spell_key = '<leader>s'
@@ -466,6 +470,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Map cse to vimtex-env-change
 nmap cse <plug>(vimtex-env-change)
