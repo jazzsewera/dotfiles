@@ -1,0 +1,12 @@
+set commentary
+
+map <leader>cc :'<,'>action CommentByLineComment<CR>
+map <leader>cb :'<,'>action CommentByBlockComment<CR>
+
+nmap <leader>gD :action GotoDeclaration<CR>
+nmap <leader>gr :action GotoDeclaration<CR>
+nmap <leader>gt :action GotoTypeDeclaration<CR>
+nmap <leader>gd :action GotoImplementation<CR>
+nmap <leader>gi :action GotoImplementation<CR>
+
+set number relativenumber
