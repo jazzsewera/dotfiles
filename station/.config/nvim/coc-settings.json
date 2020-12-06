@@ -7,9 +7,8 @@
     "typescript": "typescriptreact"
   },
 
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false,
   "coc.preferences.formatOnSaveFiletypes": [
+    "python",
     "css",
     "Markdown",
     "json",
@@ -28,6 +27,12 @@
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
+
+  "python.jediEnabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Args": ["--ignore=E501"],
 
   "languageserver": {
     "ccls": {

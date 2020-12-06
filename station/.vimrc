@@ -36,6 +36,8 @@ Plug 'yggdroot/indentline'
 
 " LSP syntax, linting, autocomplete
 let coc_plugins = [
+      \ 'coc-python',
+      \ 'coc-pyright',
       \ 'coc-vimtex',
       \ 'coc-java', 
       \ 'coc-emmet', 
@@ -44,8 +46,7 @@ let coc_plugins = [
       \ 'coc-eslint',
       \ 'coc-react-refactor',
       \ 'coc-styled-components',
-      \ 'coc-angular',
-      \ 'coc-python']
+      \ 'coc-angular']
 let coc_install = ':CocInstall ' . join(coc_plugins)
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': coc_install}
 
