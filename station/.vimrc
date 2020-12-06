@@ -36,7 +36,6 @@ Plug 'yggdroot/indentline'
 
 " LSP syntax, linting, autocomplete
 let coc_plugins = [
-      \ 'coc-python',
       \ 'coc-pyright',
       \ 'coc-vimtex',
       \ 'coc-java', 
