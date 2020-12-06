@@ -53,7 +53,7 @@ alert = #FF410D
 
 [bar/center_multihead]
 
-monitor = ${env:MONITOR:DisplayPort-0}
+monitor = ${env:MONITOR:DP-2}
 monitor-exact = true
 width = 100%
 height = 30
@@ -89,8 +89,8 @@ tray-position = right
 tray-padding = 3
 tray-detached = false
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsprev
+scroll-down = i3wm-wsnext
 
 dpi-x = 94
 dpi-y = 94
@@ -100,7 +100,7 @@ dpi-y = 94
 
 
 [bar/tall_multihead]
-monitor = ${env:MONITOR:DVI-D-1}
+monitor = ${env:MONITOR:DP-0}
 monitor-exact = true
 width = 100%
 height = 30
@@ -128,11 +128,11 @@ font-1 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
 font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
 font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
-modules-left = i3 cpu temperature temperature-gpu memory filesystem filesystem-data filesystem-data-hdd cloud
+modules-left = i3 cpu temperature memory filesystem filesystem-data filesystem-data-hdd cloud
 modules-right = pulseaudio xkeyboard date
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsprev
+scroll-down = i3wm-wsnext
 
 dpi-x = 94
 dpi-y = 94
@@ -142,7 +142,7 @@ dpi-y = 94
 
 
 [bar/secondary_multihead]
-monitor = ${env:MONITOR:DVI-D-0}
+monitor = ${env:MONITOR:HDMI-0}
 monitor-exact = true
 width = 100%
 height = 30
@@ -171,11 +171,11 @@ font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
 font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
-modules-center = music mpd pulseaudio
+modules-center = music mpd player-mpris-tail pulseaudio
 modules-right = redshift xkeyboard eth khal updates date
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsprev
+scroll-down = i3wm-wsnext
 
 dpi-x = 94
 dpi-y = 94
@@ -634,4 +634,12 @@ type = custom/script
 interval = 2
 
 label = %output:0:45:...%
-exec = ~/.config/polybar/custom/mpris.sh
+exec = ~/.config/polybar/custom/mpd.sh
+
+[module/player-mpris-tail]
+type = custom/script
+exec = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f ' {icon} {artist} — {title}' --icon-playing '契' --icon-paused '' --icon-stopped '栗' --icon-none 'ﭥ'
+tail = true
+click-left = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py play-pause &
+click-middle = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py previous &
+click-right = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py next &
