@@ -152,6 +152,9 @@ let g:markdown_syntax_conceal = 0
 " Colorize syntax
 syntax on
 
+" Set leader to space
+let mapleader = " "
+
 " Default tab width
 set tabstop=2
 " Use spaces instead of tabs
@@ -168,7 +171,7 @@ set mouse=a
 set incsearch
 
 " Display ruler at column 78 and a wider one at 120
-let &colorcolumn="78,".join(range(120,121),",")
+let &colorcolumn="80,88,".join(range(120,121),",")
 
 " Set F10 to focus NerdTree
 map <F10> :NERDTreeFocus <CR>
@@ -288,8 +291,8 @@ nmap <leader>gpe <Plug>(coc-diagnostic-prev-error)
 nmap <leader>gne <Plug>(coc-diagnostic-next-error)
 nmap <leader>gpw <Plug>(coc-diagnostic-prev)
 nmap <leader>gnw <Plug>(coc-diagnostic-next)
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gD <Plug>(coc-declaration)
+nmap <leader>gD <Plug>(coc-definition)
+nmap <leader>gd <Plug>(coc-declaration)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gt <Plug>(coc-type-definition)
 nmap <leader>gr <Plug>(coc-references)
