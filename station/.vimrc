@@ -425,6 +425,11 @@ nmap ]u <Plug>Markdown_MoveToParentHeader
 autocmd FileType markdown,mkd,pandoc set tw=78
 autocmd FileType markdown,mkd,pandoc set fo+=t
 
+augroup PythonOrganizeImportsOnSave
+  autocmd!
+  autocmd BufWrite *.py :CocCommand pyright.organizeimports
+augroup END
+
 nmap <leader>b :call AutoWrapToggle()<CR>
 function! AutoWrapToggle()
   if &formatoptions =~ 't'
